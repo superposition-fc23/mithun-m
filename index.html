@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mithun Manjunath, AI Product Manager & Builder</title>
+<meta name="description" content="Mithun Manjunath. Engineer who builds products and businesses from the ground up. AI products from prototype to production: voice agents, RAG, evals; plus computer vision, robotics, and privacy-preserving ML.">
+<meta property="og:title" content="Mithun Manjunath, AI Product Manager & Builder">
+<meta property="og:description" content="I build AI products, then figure out how they earn their keep.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230d9488'/><text x='50' y='71' font-size='62' font-family='Syne,sans-serif' font-weight='800' fill='white' text-anchor='middle'>m</text></svg>">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#" class="brand" aria-label="Mithun Manjunath, home"><span class="brand-mark">m</span></a>
+  <nav class="filters" id="filters" role="tablist" aria-label="Filter cards">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="about">About</button>
+    <button class="filter" data-filter="work">Work</button>
+    <button class="filter" data-filter="play">Side projects</button>
+  </nav>
+  <button class="mode-toggle" id="modeToggle" aria-pressed="false" title="Slow, buttery scrolling">
+    <span class="mode-dot"></span><span class="mode-label">slow mode</span>
+  </button>
+</header>
+
+<main class="grid" id="grid">
+
+  <!-- INTRO (about) -->
+  <button class="card c-intro s2 r2" data-cat="about" data-modal="m-about">
+    <span class="intro-top">
+      <img class="avatar" src="assets/img/avatar.jpg" alt="Mithun Manjunath" loading="eager">
+      <span class="intro-meta">
+        <span class="wave">Heyy 👋</span>
+        <span class="intro-name">I'm Mithun Manjunath</span>
+      </span>
+    </span>
+    <span class="intro-body">
+      I build AI products at MSPbots. A former founder, I'm now at UW deepening my foundations in machine
+      learning, computer vision, and robotics.
+    </span>
+    <span class="intro-open">More about me</span>
+  </button>
+
+  <!-- ETHOS (about) - front and center -->
+  <button class="card c-ethos s2 r2" data-cat="about" data-modal="m-ethos">
+    <span class="proj-eyebrow">My operating thesis</span>
+    <span class="ethos-title">Ten years of product, and a deliberate trip back to the weeds.</span>
+    <span class="ethos-sub">A decade as a PM manager, an IC, and a founder is my foundation for looking around the corner, seeing what a team needs now and next to build and scale. At UW I'm building real ML foundations and getting hands-on with physical AI and robotics. The engineering is how I stay grounded and sharp.</span>
+    <span class="proj-open">Read why</span>
+  </button>
+
+  <!-- CALLOUT TILES + fun fact -->
+  <article class="card c-stat" data-cat="work"><span class="stat-n">$2.5M</span><span class="stat-l">AI copilot pipeline, in 5 months</span></article>
+  <article class="card c-stat alt" data-cat="work"><span class="stat-n">2B+</span><span class="stat-l">transactions at 99% reliability</span></article>
+  <article class="card c-stat" data-cat="work"><span class="stat-n">5M+</span><span class="stat-l">users served across platforms</span></article>
+  <article class="card c-funfact" data-cat="play">
+    <span class="funfact-badge">Fun fact</span>
+    <span class="funfact-body">
+      <span class="funfact-emoji" aria-hidden="true">🐈</span>
+      <span class="funfact-text">I do reinforcement learning research on my cat, Mittens. She still wins most rounds.</span>
+    </span>
+  </article>
+
+  <!-- WORK CARDS (uniform, dated, ordered recent to founding) -->
+  <button class="card c-project s2 accent-orange" data-cat="work" data-modal="m-mspbots">
+    <span class="proj-eyebrow">AI Product Manager &amp; Builder · MSPbots</span>
+    <span class="proj-title">Voice AI that answers the phone</span>
+    <span class="proj-sub">Prototype to alpha revenue in 8 weeks, mostly solo.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+  <button class="card c-project s2 dark" data-cat="work" data-modal="m-devrev">
+    <span class="proj-eyebrow">Product &amp; AI Lead · DevRev</span>
+    <span class="proj-title">A RAG copilot, 0 to a $2.5M pipeline</span>
+    <span class="proj-sub">Deflection 40% to 90%, at 10K+ queries a day.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+  <button class="card c-project s2" data-cat="work" data-modal="m-xoxoday">
+    <span class="proj-eyebrow">VP Product &amp; Engineering · Xoxoday</span>
+    <span class="proj-title">Two billion data points, in real time</span>
+    <span class="proj-sub">5M+ users, a rule builder anyone could use, 50% monthly growth.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+  <button class="card c-project s2" data-cat="work" data-modal="m-oto">
+    <span class="proj-eyebrow">Associate VP Product · Oto.com</span>
+    <span class="proj-title">A new vertical, 0 to $1M</span>
+    <span class="proj-sub">28-person team, rapid experimentation in Jakarta.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+  <button class="card c-project s2 accent-teal" data-cat="work" data-modal="m-shoptree">
+    <span class="proj-eyebrow">Co-founder · Shoptree</span>
+    <span class="proj-title">A POS that bills on a dead network</span>
+    <span class="proj-sub">Bootstrapped to $1M and 300+ restaurants, offline-first on 2G.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+
+
+  <!-- SIDE PROJECTS, ordered: CV, robotics, ML, then RL-with-cat, then aquaponics -->
+  <button class="card c-project s2 sci" data-cat="play" data-modal="m-cv">
+    <span class="proj-eyebrow">Computer Vision · UW</span>
+    <span class="proj-title">Watching soccer on a laptop GPU</span>
+    <span class="proj-sub">YOLOv8 + ByteTrack + a Transformer, 0.54 mAP over 162K frames.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+  <button class="card c-project s2 sci" data-cat="play" data-modal="m-robotics">
+    <span class="proj-eyebrow">Robotics · UW</span>
+    <span class="proj-title">A robot arm, reaching around an obstacle</span>
+    <span class="proj-sub">ROS + MoveIt + OMPL; 100% in sim, 98% across 56 real trials.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+  <button class="card c-project s2 sci" data-cat="play" data-modal="m-unlearning">
+    <span class="proj-eyebrow">Privacy-preserving ML · UW</span>
+    <span class="proj-title">Making an LLM forget what it memorized</span>
+    <span class="proj-sub">Gradient-difference unlearning with LoRA on Phi-2 and Llama-2.</span>
+    <span class="proj-open">Explore</span>
+  </button>
+  <article class="card c-shot imgcard s2" data-cat="play">
+    <span class="shot-full"><img src="assets/img/aquaponics-1.jpg" alt="Aquaponics grow beds" loading="lazy"></span>
+    <span class="shot-cap on-img">
+      <span class="proj-title sm">48,000 plants in 200 sq ft, using fish</span>
+      <span class="proj-sub">No soil. A lot of 3D-printed parts.</span>
+    </span>
+  </article>
+
+  <!-- TOOLKIT (about) -->
+  <article class="card c-toolkit s2 r2" data-cat="about">
+    <span class="card-label">In my toolkit</span>
+    <span class="tk-group">
+      <span class="tk-h">Build &amp; AI-native</span>
+      <span class="chips"><span>Vibe-coding</span><span>Python</span><span>LangChain</span><span>MCP</span><span>Cursor / Claude Code</span><span>Git</span></span>
+    </span>
+    <span class="tk-group">
+      <span class="tk-h">Voice, data, product &amp; design</span>
+      <span class="chips"><span>Deepgram</span><span>Twilio</span><span>SQL · ELK</span><span>AWS · GCP · Azure</span><span>Figma</span><span>Gamma</span><span>Pricing</span><span>GTM</span></span>
+    </span>
+    <span class="tk-group">
+      <span class="tk-h">ML, CV &amp; robotics</span>
+      <span class="chips"><span>PyTorch</span><span>RAG</span><span>Multi-agent</span><span>LLM evals</span><span>YOLOv8</span><span>ByteTrack</span><span>Transformers</span><span>LoRA</span><span>ROS / MoveIt</span><span>Gazebo</span><span>Machine unlearning</span></span>
+    </span>
+  </article>
+
+
+
+  <!-- CONTACT (about) -->
+  <article class="card c-contact s2 dark" data-cat="about">
+    <span class="contact-line">If any of this sounds like your kind of problem, let's talk.</span>
+    <span class="contact-actions">
+      <a class="cbtn" href="mailto:mithun2389@gmail.com">mithun2389@gmail.com</a>
+      <a class="cbtn ghost" href="https://www.linkedin.com/in/mithunmanjunath" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="cbtn ghost" href="https://github.com/superposition-fc23" target="_blank" rel="noopener">GitHub</a>
+      <a class="cbtn ghost" href="resume/resume-mithun-manjunath.html" target="_blank" rel="noopener">Résumé</a>
+    </span>
+  </article>
+
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> Mithun Manjunath</span>
+  <span>Hand-built in Seattle. No templates.</span>
+</footer>
+
+<!-- ============ MODALS ============ -->
+<div class="modal-root" id="modalRoot" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+
+  <!-- ABOUT -->
+  <div class="modal" id="m-about" role="dialog" aria-modal="true" aria-labelledby="m-about-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">About</span>
+      <h2 class="modal-title" id="m-about-t">An engineer who loves building products and businesses from the ground up.</h2>
+      <p>I solve problems from first principles, fad or not. And as computing moves from deterministic to
+      probabilistic, closer to how the real world actually works, I'm leaning into that shift: sharpening
+      computer vision, deep learning, robotics, and quantum computing at the University of Washington.</p>
+      <p>Until recently I built and scaled products 0 to 1 to 10. Using science and technology to solve business
+      problems is my instinct, so product development and management came naturally. Beyond B2B SaaS, I've
+      conceptualized, built, launched, and iteratively improved AI copilots for Builders, the product and
+      engineering teams who ship.</p>
+      <p>Right now I'm heads-down on the new normal: vibe-coding, writing evals, and scaling prototypes. I'm most
+      excited about products at the intersection of systems design, machine perception, data infrastructure, and
+      quantum information.</p>
+      <p>I treated this master's as a career break optimized for information gain, relearning programming, applied
+      math, and strategy across computer vision, deep learning, information theory, classical and
+      privacy-preserving ML, robot manipulation, quantum algorithms, game theory, and IT strategy.</p>
+      <div class="tags"><span>First principles</span><span>0 to 1 to 10</span><span>AI copilots</span><span>CV · DL · Robotics</span><span>Quantum</span><span>Vibe-coding</span></div>
+    </div>
+  </div>
+
+  <!-- ETHOS -->
+  <div class="modal" id="m-ethos" role="dialog" aria-modal="true" aria-labelledby="m-ethos-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">My operating thesis</span>
+      <h2 class="modal-title" id="m-ethos-t">Why I went back to engineering</h2>
+      <p>Ten-plus years leading product as a manager, an IC, and a founder is my foundation. It taught me to look
+      around the corner: to provision what a team needs now and next to build and scale a product that wins. So
+      why spend a career break training models in computer vision, robotics, and machine learning? Five reasons.</p>
+      <ul class="checks">
+        <li><b>To stay grounded and trade ego for empathy.</b> Doing the hard build myself keeps me honest about what I'm asking engineers to do.</li>
+        <li><b>To really understand machine learning</b>, not the headlines, the mechanics, so I can frame problems the way the system actually behaves.</li>
+        <li><b>To resist over-engineering and micromanaging.</b> When you know the true cost of complexity, you design for less of it.</li>
+        <li><b>To unlearn and relearn product management, AI-first:</b> vibe-coding, iterating faster, and running GTM, product metrics, and scoping with AI in the loop.</li>
+        <li><b>To ask better questions.</b> The right question, asked early, beats a dozen status updates.</li>
+      </ul>
+      <p>The ten years are the foundation. The engineering is how I keep it sharp.</p>
+      <div class="tags"><span>Looking around the corner</span><span>Ego to empathy</span><span>AI-native PM</span><span>First principles</span></div>
+    </div>
+  </div>
+
+  <!-- MSPbots -->
+  <div class="modal" id="m-mspbots" role="dialog" aria-modal="true" aria-labelledby="m-mspbots-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">AI Product Manager &amp; Builder · MSPbots</span>
+      <h2 class="modal-title" id="m-mspbots-t">A voice AI agent that answers the phone and files the ticket</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <div class="voice-demo">
+          <div class="vd-badge"><span class="pulse"></span> Voice AI, live call</div>
+          <div class="vd-line caller"><span class="vd-who">Caller</span>"My Outlook won't send email since this morning."</div>
+          <div class="vd-line agent"><span class="vd-who">Agent</span>"Got it, let's check your outbox. One moment while I note this down."</div>
+          <div class="vd-meta"><span>P50 378ms</span><span class="ok">Ticket created</span><span>3.2s to answer</span></div>
+        </div>
+        <p class="tldr-lede">I took a vibe-coded prototype to its first paying customers in about eight weeks, owning the whole thing: the voice pipeline, the prompts, the evaluation harness, the pricing, and the go-to-market. The bet was simple. In voice AI, reliability is what earns trust, so I built two features really well instead of ten features halfway.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <h4>Problem</h4>
+        <p>When a managed service provider's office closes, their clients' problems do not. After-hours calls fall into three bad options: voicemail that quietly loses the caller, a human answering service that reads a script and files a half-useless ticket, or an on-call engineer woken up for a password reset. One design partner was paying over $800 a month and maintaining a 20-step Zapier workflow just to bridge their answering service into ConnectWise. The job to be done was clear: answer every call in seconds, hold a real conversation, resolve what can be resolved, and leave behind a clean, categorized ticket, reliably enough that an MSP would trust it with their own customers.</p>
+        <h4>Solution</h4>
+        <p>I joined when this was a vibe-coded prototype and owned it end to end. I evaluated five voice pipelines against one rubric and chose the Deepgram Voice Agent over Twilio, because it folded speech-to-text, the language model, and text-to-speech into a single low-latency loop. Then I went hands-on. I rewrote the four system skills from 637 lines to 274 by treating the model's attention as a budget: front-load the rules that matter, delete the reference tables a model already knows. Quality went up.</p>
+        <p>The hardest problem was turn-taking, knowing when the caller has actually finished speaking. I reframed it as a binary classification problem so the team could tune Deepgram's endpointing with precision, recall, and an F1 target instead of trial and error. Because the product has to be trusted, I designed a fallback chain so that even a three-second hang-up still produces a ticket with the caller's number, and I wrote a 20-metric, three-tier evaluation framework (offline, shadow, and live) as the gate between alpha, beta, and GA. Alongside the build I assessed and reallocated a seven-person PM team, led hiring for a growth role, and left a structured handover across six documents.</p>
+        <h4>Result</h4>
+        <p>The prototype reached alpha monetization in roughly eight weeks, with the pipeline benchmarking at 378ms median response and comfortable headroom on the latency target. I grew the funnel from three design partners to more than 35 prospects, designed a single outreach that converted nearly half the demos it reached, and priced the product to land several times cheaper than the incumbent on economics I had actually modeled. I also vibe-coded the GTM plumbing: Python pipelines pulling from ClickUp, Fathom, and HubSpot to refresh the customer-intelligence dashboards on their own.</p>
+        <h4>Learnings</h4>
+        <p>Three things stuck. Reliability earns trust, not features, so the real MVP was two features done well. Measurement is a prerequisite, not a follow-up, so I instrumented the pipeline before there was any traffic to measure. And the highest-leverage thing a PM can do is close the gap between a metric and the felt experience: "F1 score" moved nobody until I drew the exact moment the agent talks over a caller.</p>
+      </div>
+      <div class="tags"><span>Deepgram</span><span>Twilio</span><span>LLM evals</span><span>Vibe-coding</span><span>Pricing</span><span>GTM</span><span>Team leadership</span></div>
+    </div>
+  </div>
+
+  <!-- DevRev -->
+  <div class="modal" id="m-devrev" role="dialog" aria-modal="true" aria-labelledby="m-devrev-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">Product &amp; AI Lead · DevRev</span>
+      <h2 class="modal-title" id="m-devrev-t">A RAG copilot for product teams, from prototype to a $2.5M pipeline</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <p class="tldr-lede">I led an AI Copilot for DevRev's Build platform from prototype to launch in four months, then grew it into a $2.5M pipeline. It let anyone ask questions of their project data in plain language and automate the busywork, and it took support deflection from 40% to 90%.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <figure class="blog-img"><img src="assets/img/devrev-build-dashboard.jpg" alt="DevRev Build dashboard" loading="lazy"><figcaption>Build's dashboard, surfacing high-impact customer requests and sentiment for product teams.</figcaption></figure>
+        <h4>Problem</h4>
+        <p>Build is a CRM purpose-built for product-led organizations, uniting product, design, and engineering on one platform to plan, track, and ship customer-centric work. But the teams using it, and the support teams behind them, were buried. Senior engineers were spending hours a day triaging tickets by hand, and customers kept asking questions whose answers already lived in the project data and the docs.</p>
+        <h4>Solution</h4>
+        <p>I led Build from concept to launch with a 15-person cross-functional team, and designed its standout capability: a Copilot that lets anyone query project status and automate repetitive work in conversation. I drove it from prototype to beta to launch in four months. Under the hood it is a production RAG system, and the accuracy came from hybrid search, combining retrieval-augmented generation with self-query retrieval, plus classification models and ranking. In parallel I built a deep-learning classifier (K-means clustering with an NGBoost model) that auto-routed tickets, and laid the groundwork for the agentic task automation that later became a flagship.</p>
+        <figure class="blog-img"><img src="assets/img/devrev-copilot-sprint.jpg" alt="DevRev Copilot answering a planning question" loading="lazy"><figcaption>The Copilot answering a sprint-planning question in plain language.</figcaption></figure>
+        <h4>Result</h4>
+        <p>Build reached 15 mid-sized companies and more than 2,000 users within a year. The Copilot lifted answer deflection from 40% to 90% at under three seconds across 10,000+ queries a day, and grew into a $2.5M pipeline in five months across 50+ enterprise customers. The classifier handled 10,000+ tickets a day and gave support teams back roughly 15 hours a day. I ran 40+ customer interviews to keep it honest, and led a distributed group of 10 product managers across the US, Slovenia, and India.</p>
+        <h4>Learnings</h4>
+        <p>Evaluations are what turn "better" into a number you can defend, and the bottleneck is almost never the model, it is the retrieval and the routing around it. And leading PMs across three time zones taught me that a crisp written spec travels further than any meeting.</p>
+      </div>
+      <div class="tags"><span>RAG</span><span>Self-query retrieval</span><span>NLP classification</span><span>LangChain</span><span>Leadership</span></div>
+    </div>
+  </div>
+
+  <!-- Xoxoday -->
+  <div class="modal" id="m-xoxoday" role="dialog" aria-modal="true" aria-labelledby="m-xoxoday-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">VP, Product &amp; Engineering · Xoxoday</span>
+      <h2 class="modal-title" id="m-xoxoday-t">Compass: two billion data points, crunched in real time</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <p class="tldr-lede">I rebuilt the platform behind Compass, a sales-incentive and gamification product, to compute on more than two billion data points in real time for over five million users, and gave non-technical teams a way to build their own payout logic without filing an engineering ticket.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <figure class="blog-img"><img src="assets/img/xoxoday-compass-builder.jpg" alt="Compass rule builder and dashboards" loading="lazy"><figcaption>Compass: the browser-based rule builder, alongside live revenue and quota dashboards.</figcaption></figure>
+        <h4>Problem</h4>
+        <p>Compass serves rewards and recognition teams at insurance and logistics enterprises. The hard part is that incentive logic is genuinely complex, it changes constantly, and it has to be computed in real time across millions of agents while staying compliant. Worse, every rule change meant an engineering ticket, which slowed customer onboarding to a crawl.</p>
+        <h4>Solution</h4>
+        <p>I built and led a 35-person cross-functional team and redesigned the data platform to scale across countries. It became a multi-source computation engine: real-time ETL through SQL connectors and Azure Data Factory, compute on AWS and Redis, and a plug-and-play marketplace of connectors. The piece I am proudest of is the dynamic rule builder, a browser-based formula builder backed by a tree-based expression-evaluation algorithm, so that a non-technical user could build an expression rather than pick a static one from a dropdown.</p>
+        <figure class="blog-img"><img src="assets/img/xoxoday-compass-mobile.jpg" alt="Compass mobile app" loading="lazy"><figcaption>The companion mobile app, where agents track earnings, quotas, and leaderboards.</figcaption></figure>
+        <h4>Result</h4>
+        <p>The platform computed on more than two billion data points in real time, served over five million users across 50 enterprise customers, and held 99% reliability. Putting rule-building in users' hands cut enterprise implementation time by 70%, infrastructure work cut cost by 30%, and the business grew 50% month over month on a two-year roadmap I owned. I recruited the team that did it, five PMs, three TPMs, and five analysts, and presented quarterly reviews to the C-suite and board.</p>
+        <h4>Learnings</h4>
+        <p>The biggest unlock was turning a developer task into a user capability. When you give people the power to express what they want, the platform scales itself, and you stop being the bottleneck.</p>
+      </div>
+      <div class="tags"><span>Real-time ETL</span><span>AWS · Redis</span><span>Dynamic rule builder</span><span>ELK</span><span>Leadership</span></div>
+    </div>
+  </div>
+
+  <!-- Oto -->
+  <div class="modal" id="m-oto" role="dialog" aria-modal="true" aria-labelledby="m-oto-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">Associate VP, Product · Oto.com (CarDekho)</span>
+      <h2 class="modal-title" id="m-oto-t">A new vertical, from zero to $1M in eight months</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <p class="tldr-lede">I stood up a brand-new revenue vertical for an Indonesian auto marketplace, from zero to a million dollars in eight months, leading a 28-person team through fast, instrumented experimentation.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <h4>Problem</h4>
+        <p>Oto, part of CarDekho, was scaling fast in Indonesia and needed a brand-new revenue vertical stood up quickly in a crowded market, while dealer operations were still largely manual.</p>
+        <h4>Solution</h4>
+        <p>I owned product for the new vertical end to end, leading a 28-person cross-functional team and shipping more than 15 features through rapid experimentation. I also planned an internal CRM and analytics platform to streamline how dealers worked day to day.</p>
+        <h4>Result</h4>
+        <p>The vertical went from zero to $1M in eight months, and the dealer tooling lifted operations productivity by 50 to 70%.</p>
+        <h4>Learnings</h4>
+        <p>In a zero-to-one vertical, the speed of learning beats the polish of any single feature. Instrument early, experiment often, and let the market tell you where to push.</p>
+      </div>
+      <div class="tags"><span>0 to 1</span><span>Marketplace</span><span>CRM</span><span>Experimentation</span></div>
+    </div>
+  </div>
+
+  <!-- Shoptree -->
+  <div class="modal" id="m-shoptree" role="dialog" aria-modal="true" aria-labelledby="m-shoptree-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">Co-founder, Product &amp; Technology · Shoptree</span>
+      <h2 class="modal-title" id="m-shoptree-t">A POS that keeps billing when the network drops</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <p class="tldr-lede">I co-founded a bootstrapped company and built a restaurant point-of-sale that keeps billing even when the network drops. It grew to 150+ restaurants and 300+ enterprise customers, entirely without outside funding.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <figure class="blog-img"><img src="assets/img/shoptree-pos.jpg" alt="Shoptree POS on iPad" loading="lazy"><figcaption>Shoptree's POS on iPad: fast billing that keeps working when the connection does not.</figcaption></figure>
+        <h4>Problem</h4>
+        <p>Indian restaurants and retailers needed dependable billing and inventory on inexpensive hardware and unreliable 2G networks, the kind that drop mid-transaction. The cloud POS systems of the day simply stopped working the moment the connection did.</p>
+        <h4>Solution</h4>
+        <p>With two co-founders and no outside funding, I helped build a software company that started as simple iPad billing and grew into a full POS and supply-chain platform for restaurants and retail. We wrote our own hardware SDKs so iOS and Android devices could talk to card terminals, thermal printers, and digital consoles, and we leaned hard into client-side compute so billing stayed robust through outages. On top sat a five-level multi-echelon inventory system with recipe-based stocking, demand forecasting, and anomaly detection.</p>
+        <h4>Result</h4>
+        <p>Shoptree ran in 150+ restaurants across 400+ POS terminals for 1,000+ users, holding 99% uptime with under a second to print a receipt and under 13 seconds to process a card, even on 2G. We grew from zero to $1M and 300+ enterprise customers in 18 months, sustainably and unfunded. The inventory system cut pilferage by 30% across 100+ locations, and a v2.0 dropped churn from 14% to 7% while lifting average revenue per user by 30%. An API marketplace with eight-plus integrations cut onboarding time by 70%.</p>
+        <h4>Learnings</h4>
+        <p>Constraints are a gift. Designing for the worst network in the room forced an architecture that worked everywhere, and it taught me to build for reliability first. Founding the company taught me every function, from writing code to chasing collections.</p>
+      </div>
+      <div class="tags"><span>Offline-first</span><span>Client-side compute</span><span>Hardware SDKs</span><span>Supply chain</span><span>Founder</span></div>
+    </div>
+  </div>
+
+  <!-- CV -->
+  <div class="modal" id="m-cv" role="dialog" aria-modal="true" aria-labelledby="m-cv-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">Computer Vision · University of Washington</span>
+      <h2 class="modal-title" id="m-cv-t">Watching 90-minute football on a laptop GPU</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <p class="tldr-lede">I built a computer-vision pipeline that spots actions in 90-minute football matches and runs on a laptop GPU, not a server farm. It reached 0.54 mAP across 162,000 frames.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <h4>Problem</h4>
+        <p>Spotting fine-grained actions in a 90-minute match, a pass, a drive, the nothing in between, is both compute-heavy and badly imbalanced: most frames are background. Most published pipelines quietly assume a datacenter GPU. I wanted one that runs on a laptop.</p>
+        <h4>Solution</h4>
+        <p>I built a three-stage pipeline. A frozen YOLOv8 detects players and the ball and yields 512-dimensional spatial features; ByteTrack keeps identities consistent across frames; and a small Transformer encoder, two layers and four attention heads, reads 32-frame windows to classify the action. To make it tractable I cached the detector's features, filtered uninformative frames, and used class-balanced weighted sampling so the rare events were not drowned out, training with AdamW on the SoccerNet ball-action data.</p>
+        <h4>Result</h4>
+        <p>The model reached 0.54 mAP and about 66% validation accuracy across 162,000 frames, and the Transformer clearly beat an LSTM baseline trained under the same conditions. Feature caching cut training compute by roughly 40%, so the whole thing ran on an M1 GPU.</p>
+        <h4>Learnings</h4>
+        <p>Principled engineering, caching, sampling, attention, beats brute force. You can do real temporal computer vision on constrained hardware if you respect where the bottlenecks actually are.</p>
+      </div>
+      <div class="why-note"><span class="why-label">Why a PM builds this</span><p>Building it by hand taught me to frame vision problems the way a model actually sees them, not the way a slide deck does. It is how I stay grounded and ask sharper questions.</p></div>
+      <div class="tags"><span>PyTorch</span><span>YOLOv8</span><span>ByteTrack</span><span>Transformer</span><span>Multi-object tracking</span><span>SoccerNet</span></div>
+    </div>
+  </div>
+
+  <!-- Robotics -->
+  <div class="modal" id="m-robotics" role="dialog" aria-modal="true" aria-labelledby="m-robotics-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">Robotics · University of Washington</span>
+      <h2 class="modal-title" id="m-robotics-t">Teaching a robot arm to reach around an obstacle</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <p class="tldr-lede">I taught a real six-jointed robot arm to grasp an object hidden behind an obstacle, and showed that planning in joint space, not Cartesian space, is what made the motion reliable enough to trust.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <h4>Problem</h4>
+        <p>A six-degree-of-freedom arm has to grasp a bottle sitting behind a fixed obstacle without colliding with it. The naive approach, handing the planner a Cartesian position to reach, produces inconsistent joint configurations and sometimes fails outright.</p>
+        <h4>Solution</h4>
+        <p>On ROS and MoveIt, using the OMPL RRTConnect planner, I built and compared two strategies: unconstrained Cartesian targets versus deterministic joint-space targets. I logged every trial, its success mode, the end-effector orientation, the timing, to a CSV, and validated first in Gazebo simulation and then on a physical Kinova Gen3 Lite arm.</p>
+        <h4>Result</h4>
+        <p>Constraining the plan in joint space took success from 40% with Cartesian targets to 100% in simulation, with zero grasp-height error and an identical orientation every run. On real hardware it held 98% pre-grasp success across 56 trials, clean sim-to-real transfer.</p>
+        <h4>Learnings</h4>
+        <p>Determinism is reliability. Constraining the plan made the motion repeatable enough to trust on physical hardware, which is exactly the instinct I bring to shipping AI products.</p>
+      </div>
+      <div class="why-note"><span class="why-label">Why a PM builds this</span><p>Determinism as reliability is the same instinct I bring to AI products, and doing the build myself keeps me humble about what I ask engineers to do.</p></div>
+      <div class="tags"><span>ROS</span><span>MoveIt</span><span>OMPL RRTConnect</span><span>Kinova Gen3 Lite</span><span>Gazebo</span><span>Sim-to-real</span></div>
+    </div>
+  </div>
+
+  <!-- Unlearning -->
+  <div class="modal" id="m-unlearning" role="dialog" aria-modal="true" aria-labelledby="m-unlearning-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">Privacy-preserving ML · University of Washington</span>
+      <h2 class="modal-title" id="m-unlearning-t">Making an LLM forget what it memorized</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="deep">Detailed</button>
+        <button class="tab" data-tab="tldr">TL;DR</button>
+      </div>
+      <div class="tab-panel" data-panel="tldr">
+        <p class="tldr-lede">I tested whether a fine-tuned language model can truly forget specific text on request, a real privacy and compliance question, and found that one unlearning method erases the memory while keeping the model useful, and another destroys it.</p>
+      </div>
+      <div class="tab-panel active" data-panel="deep">
+        <h4>Problem</h4>
+        <p>Large language models memorize their training text, sometimes verbatim, which is a genuine problem under GDPR and the EU AI Act's right to be forgotten. Can you make a model delete specific data without retraining it from scratch, and without wrecking everything else it knows?</p>
+        <h4>Solution</h4>
+        <p>I compared two unlearning methods, gradient ascent and gradient difference, using LoRA adapters on Phi-2 and Llama-2-7B, with 4-bit quantization and a paged 8-bit optimizer to fit the work on available hardware. I measured three things: how much verbatim text remained, how much the model's general perplexity drifted, and whether a loss-based membership-inference attack could still tell training data from held-out data, all on the MUSE-Books benchmark.</p>
+        <h4>Result</h4>
+        <p>Gradient difference removed verbatim memorization entirely while keeping general perplexity near baseline; plain gradient ascent erased the memory but destroyed the model's utility in the process. A side finding: memorization needs scale. The 7B model memorized the text, while the smaller Phi-2 largely did not.</p>
+        <h4>Learnings</h4>
+        <p>Unlearning is empirical remediation, not a formal guarantee, so it complements differential privacy rather than replacing it. The retain-loss term is what keeps the model useful: the privacy-versus-utility tradeoff is the entire game.</p>
+      </div>
+      <div class="why-note"><span class="why-label">Why a PM builds this</span><p>Wrestling with the privacy-utility tradeoff first-hand makes me a sharper PM on AI governance, not a spectator reading summaries.</p></div>
+      <div class="tags"><span>LoRA</span><span>Phi-2</span><span>Llama-2</span><span>Gradient difference</span><span>Membership-inference</span><span>PPML</span></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
