@@ -77,8 +77,8 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 .co-row{ display:flex; align-items:center; gap:10px; }
 .co-logo{ width:56px; height:56px; border-radius:12px; flex-shrink:0; display:block; background:#fff; padding:7px; box-sizing:border-box; object-fit:contain; box-shadow:0 1px 3px rgba(0,0,0,.18); }
 .c-project.dark .co-logo{ width:44px; height:44px; background:transparent; box-shadow:none; padding:0; }
-.co-logo.wide{ width:130px; padding:8px 12px; }
-.co-logo.xwide{ width:200px; padding:6px 14px; }
+.co-logo.wide{ width:100px; height:44px; padding:5px 9px; }
+.co-logo.sm{ width:44px; height:44px; padding:0; background:transparent; box-shadow:none; }
 
 .accent-orange{ background:var(--orange); border-color:transparent; color:#fff; }
 .dark{ background:var(--dark); border-color:transparent; color:#ececec; }
