@@ -23,6 +23,8 @@ button{ font:inherit; color:inherit; background:none; border:none; cursor:pointe
 .brand:hover .brand-mark{ transform:rotate(-8deg) scale(1.05); }
 .brand-img{ width:38px; height:38px; border-radius:50%; object-fit:cover; display:block; border:1.5px solid var(--line); transition:transform .25s var(--ease); }
 .brand:hover .brand-img{ transform:scale(1.06) rotate(-3deg); }
+.brand-mono{ font-family:'Allura', 'Brush Script MT', cursive; font-weight:400; font-size:54px; line-height:1; color:var(--teal-dk); letter-spacing:-.04em; display:block; padding:0 4px; transition:transform .25s var(--ease); }
+.brand:hover .brand-mono{ transform:rotate(-4deg) scale(1.06); }
 .filters{ display:flex; gap:4px; margin:0 auto; background:rgba(255,255,255,.7); backdrop-filter:blur(8px); padding:5px; border-radius:99px; border:1px solid var(--line); }
 .filter{ font-size:14px; font-weight:600; color:var(--muted); padding:7px 16px; border-radius:99px; transition:color .2s, background .2s; }
 .filter:hover{ color:var(--ink); }
@@ -41,6 +43,7 @@ button{ font:inherit; color:inherit; background:none; border:none; cursor:pointe
   align-items:start; width:max-content; max-width:100%; margin:8px auto 28px; padding:0 24px; }
 .s2{ grid-column:span 2; }
 .s3{ grid-column:span 3; }
+.s4{ grid-column:span 4; }
 .card{ align-self:start; }
 
 /* CARD base */
@@ -141,7 +144,7 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 .c-quest .proj-title.sm{ color:var(--ink); } .c-quest .proj-sub{ color:var(--muted); }
 
 /* TOOLKIT */
-.c-toolkit{ display:grid; grid-template-columns:repeat(2, 1fr); gap:14px 24px; align-content:start; }
+.c-toolkit{ display:grid; grid-template-columns:repeat(4, 1fr); gap:14px 24px; align-content:start; }
 .c-toolkit .card-label{ grid-column:1 / -1; }
 .card-label{ font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
 .tk-group{ display:flex; flex-direction:column; gap:9px; }
@@ -169,6 +172,8 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 
 /* FOOTER */
 .foot{ max-width:calc(var(--col)*4 + var(--gap)*3 + 48px); margin:0 auto; padding:18px 24px 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:13px; color:var(--muted); }
+.foot a{ color:var(--teal-dk); text-decoration:underline; text-underline-offset:2px; }
+.foot a:hover{ color:var(--teal); }
 
 /* ============================================================ MODALS ============================================================ */
 .modal-root{ position:fixed; inset:0; z-index:500; display:none; }
@@ -246,11 +251,14 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
   .grid{ grid-template-columns:repeat(2,1fr); max-width:560px; }
   .s2{ grid-column:span 2; }
   .s3{ grid-column:span 2; }
-  .c-toolkit{ grid-template-columns:1fr; }
+  .s4{ grid-column:span 2; }
+  .c-toolkit{ grid-template-columns:repeat(2, 1fr); }
   .nav{ flex-wrap:wrap; } .filters{ order:3; width:100%; justify-content:center; }
 }
 @media (max-width:460px){
   .grid{ grid-template-columns:1fr; }
   .s2{ grid-column:auto; }
   .s3{ grid-column:auto; }
+  .s4{ grid-column:auto; }
+  .c-toolkit{ grid-template-columns:1fr; }
 }

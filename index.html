@@ -10,14 +10,14 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Allura&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230d9488'/><text x='50' y='71' font-size='62' font-family='Syne,sans-serif' font-weight='800' fill='white' text-anchor='middle'>m</text></svg>">
 </head>
 <body>
 
 <header class="nav" id="nav">
-  <a href="#" class="brand" aria-label="Mithun Manjunath, home"><img class="brand-img" src="assets/img/avatar-head.png" alt="Mithun Manjunath"></a>
+  <a href="#" class="brand" aria-label="Mithun Manjunath, home"><span class="brand-mono">MM</span></a>
   <nav class="filters" id="filters" role="tablist" aria-label="Filter cards">
     <button class="filter active" data-filter="all">All</button>
     <button class="filter" data-filter="about">About</button>
@@ -130,8 +130,19 @@
     </span>
   </article>
 
+  <!-- CONTACT (about) - fills empty slot beside aquaponics -->
+  <article class="card c-contact s2 dark" data-cat="about">
+    <span class="contact-line">Building scalable AI across apps, multimodal, infra, robotics. Open full-time.</span>
+    <span class="contact-actions">
+      <a class="cbtn" href="mailto:mithun2389@gmail.com">mithun2389@gmail.com</a>
+      <a class="cbtn ghost" href="https://www.linkedin.com/in/mithunmanjunath" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="cbtn ghost" href="https://github.com/superposition-fc23" target="_blank" rel="noopener">GitHub</a>
+      <a class="cbtn ghost" href="resume/resume-mithun-manjunath.html" target="_blank" rel="noopener">Résumé</a>
+    </span>
+  </article>
+
   <!-- TOOLKIT (about) -->
-  <article class="card c-toolkit s3" data-cat="about">
+  <article class="card c-toolkit s4" data-cat="about">
     <span class="card-label">In my toolkit</span>
     <span class="tk-group">
       <span class="tk-h">ML reliability &amp; evals</span>
@@ -153,16 +164,6 @@
 
 
 
-  <!-- CONTACT (about) -->
-  <article class="card c-contact dark" data-cat="about">
-    <span class="contact-line">Building scalable AI across apps, multimodal, infra, robotics. Open full-time.</span>
-    <span class="contact-actions">
-      <a class="cbtn" href="mailto:mithun2389@gmail.com">mithun2389@gmail.com</a>
-      <a class="cbtn ghost" href="https://www.linkedin.com/in/mithunmanjunath" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="cbtn ghost" href="https://github.com/superposition-fc23" target="_blank" rel="noopener">GitHub</a>
-      <a class="cbtn ghost" href="resume/resume-mithun-manjunath.html" target="_blank" rel="noopener">Résumé</a>
-    </span>
-  </article>
 
 </main>
 
