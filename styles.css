@@ -76,6 +76,7 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 .co-row{ display:flex; align-items:center; gap:10px; }
 .co-logo{ width:56px; height:56px; border-radius:12px; flex-shrink:0; display:block; background:#fff; padding:7px; box-sizing:border-box; object-fit:contain; box-shadow:0 1px 3px rgba(0,0,0,.18); }
 .c-project.dark .co-logo{ background:transparent; box-shadow:none; padding:0; }
+.co-logo.wide{ width:120px; padding:8px 12px; }
 
 .accent-orange{ background:var(--orange); border-color:transparent; color:#fff; }
 .dark{ background:var(--dark); border-color:transparent; color:#ececec; }
@@ -107,7 +108,7 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 .c-funfact{ background:linear-gradient(150deg,#fef2f4,#eef2ff); border-color:#f2e2ec; justify-content:space-between; gap:10px; }
 .funfact-badge{ align-self:flex-start; font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#b4458a; background:#fff; border:1px solid #f3dcea; padding:4px 11px; border-radius:99px; }
 .funfact-body{ display:flex; flex-direction:column; gap:9px; }
-.funfact-pic{ width:56px; height:56px; border-radius:14px; object-fit:cover; flex-shrink:0; box-shadow:0 1px 3px rgba(0,0,0,.18); }
+.funfact-pic{ width:80px; height:80px; border-radius:18px; object-fit:cover; flex-shrink:0; box-shadow:0 1px 3px rgba(0,0,0,.18); }
 .funfact-text{ font-size:13px; line-height:1.46; color:var(--body); }
 
 /* QUOTE */
