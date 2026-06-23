@@ -17,12 +17,13 @@
 <body>
 
 <header class="nav" id="nav">
-  <a href="#" class="brand" aria-label="Mithun Manjunath, home"><span class="brand-mark">m</span></a>
+  <a href="#" class="brand" aria-label="Mithun Manjunath, home"><img class="brand-img" src="assets/img/avatar-head.png" alt="Mithun Manjunath"></a>
   <nav class="filters" id="filters" role="tablist" aria-label="Filter cards">
     <button class="filter active" data-filter="all">All</button>
     <button class="filter" data-filter="about">About</button>
     <button class="filter" data-filter="work">Work</button>
     <button class="filter" data-filter="play">Side projects</button>
+    <a class="filter-link" href="resume/resume-mithun-manjunath.html" target="_blank" rel="noopener">Résumé</a>
   </nav>
   <button class="mode-toggle" id="modeToggle" aria-pressed="false" title="Slow, buttery scrolling">
     <span class="mode-dot"></span><span class="mode-label">slow mode</span>
@@ -32,26 +33,26 @@
 <main class="grid" id="grid">
 
   <!-- INTRO (about) -->
-  <button class="card c-intro s2 r2" data-cat="about" data-modal="m-about">
+  <button class="card c-intro s2" data-cat="about" data-modal="m-about">
     <span class="intro-top">
-      <img class="avatar" src="assets/img/avatar.jpg" alt="Mithun Manjunath" loading="eager">
+      <img class="avatar" src="assets/img/avatar-head.png" alt="Mithun Manjunath" loading="eager">
       <span class="intro-meta">
         <span class="wave">Heyy 👋</span>
         <span class="intro-name">I'm Mithun Manjunath</span>
       </span>
     </span>
     <span class="intro-body">
-      I build AI products at MSPbots. A former founder, I'm now at UW deepening my foundations in machine
-      learning, computer vision, and robotics.
+      I build AI products at MSPbots. A former founder with a master's from UW in machine learning, computer
+      vision, and robotics, I never stop learning.
     </span>
     <span class="intro-open">More about me</span>
   </button>
 
   <!-- ETHOS (about) - front and center -->
-  <button class="card c-ethos s2 r2" data-cat="about" data-modal="m-ethos">
+  <button class="card c-ethos s2" data-cat="about" data-modal="m-ethos">
     <span class="proj-eyebrow">My operating thesis</span>
     <span class="ethos-title">Ten years of product, and a deliberate trip back to the weeds.</span>
-    <span class="ethos-sub">A decade as a PM manager, an IC, and a founder is my foundation for looking around the corner, seeing what a team needs now and next to build and scale. At UW I'm building real ML foundations and getting hands-on with physical AI and robotics. The engineering is how I stay grounded and sharp.</span>
+    <span class="ethos-sub">A decade as a PM manager, an IC, and a founder is my foundation. It lets me look around the corner and see what a team needs now and next to build and scale. At UW I built real ML foundations and got hands-on with physical AI and robotics, and I keep learning. The engineering is how I stay grounded and sharp.</span>
     <span class="proj-open">Read why</span>
   </button>
 
@@ -63,37 +64,37 @@
     <span class="funfact-badge">Fun fact</span>
     <span class="funfact-body">
       <span class="funfact-emoji" aria-hidden="true">🐈</span>
-      <span class="funfact-text">I do reinforcement learning research on my cat, Mittens. She still wins most rounds.</span>
+      <span class="funfact-text">A fun way I learn reinforcement learning: shaping little behaviors with my cat, Mittens, by figuring out what she wants and what keeps her engaged while we play.</span>
     </span>
   </article>
 
   <!-- WORK CARDS (uniform, dated, ordered recent to founding) -->
   <button class="card c-project s2 accent-orange" data-cat="work" data-modal="m-mspbots">
-    <span class="proj-eyebrow">AI Product Manager &amp; Builder · MSPbots</span>
+    <span class="co-row"><img class="co-logo" src="assets/img/logos/mspbots.svg" alt="MSPbots logo"><span class="proj-eyebrow">AI Product Manager &amp; Builder · MSPbots</span></span>
     <span class="proj-title">Voice AI that answers the phone</span>
     <span class="proj-sub">Prototype to alpha revenue in 8 weeks, mostly solo.</span>
     <span class="proj-open">Explore</span>
   </button>
   <button class="card c-project s2 dark" data-cat="work" data-modal="m-devrev">
-    <span class="proj-eyebrow">Product &amp; AI Lead · DevRev</span>
+    <span class="co-row"><img class="co-logo" src="assets/img/logos/devrev.svg" alt="DevRev logo"><span class="proj-eyebrow">Product &amp; AI Lead · DevRev</span></span>
     <span class="proj-title">A RAG copilot, 0 to a $2.5M pipeline</span>
     <span class="proj-sub">Deflection 40% to 90%, at 10K+ queries a day.</span>
     <span class="proj-open">Explore</span>
   </button>
   <button class="card c-project s2" data-cat="work" data-modal="m-xoxoday">
-    <span class="proj-eyebrow">VP Product &amp; Engineering · Xoxoday</span>
+    <span class="co-row"><img class="co-logo" src="assets/img/logos/xoxoday.svg" alt="Xoxoday logo"><span class="proj-eyebrow">VP Product &amp; Engineering · Xoxoday</span></span>
     <span class="proj-title">Two billion data points, in real time</span>
     <span class="proj-sub">5M+ users, a rule builder anyone could use, 50% monthly growth.</span>
     <span class="proj-open">Explore</span>
   </button>
   <button class="card c-project s2" data-cat="work" data-modal="m-oto">
-    <span class="proj-eyebrow">Associate VP Product · Oto.com</span>
+    <span class="co-row"><img class="co-logo" src="assets/img/logos/oto.svg" alt="Oto.com logo"><span class="proj-eyebrow">Associate VP Product · Oto.com</span></span>
     <span class="proj-title">A new vertical, 0 to $1M</span>
     <span class="proj-sub">28-person team, rapid experimentation in Jakarta.</span>
     <span class="proj-open">Explore</span>
   </button>
   <button class="card c-project s2 accent-teal" data-cat="work" data-modal="m-shoptree">
-    <span class="proj-eyebrow">Co-founder · Shoptree</span>
+    <span class="co-row"><img class="co-logo" src="assets/img/logos/shoptree.svg" alt="Shoptree logo"><span class="proj-eyebrow">Co-founder · Shoptree</span></span>
     <span class="proj-title">A POS that bills on a dead network</span>
     <span class="proj-sub">Bootstrapped to $1M and 300+ restaurants, offline-first on 2G.</span>
     <span class="proj-open">Explore</span>
@@ -102,9 +103,9 @@
 
   <!-- SIDE PROJECTS, ordered: CV, robotics, ML, then RL-with-cat, then aquaponics -->
   <button class="card c-project s2 sci" data-cat="play" data-modal="m-cv">
-    <span class="proj-eyebrow">Computer Vision · UW</span>
-    <span class="proj-title">Watching soccer on a laptop GPU</span>
-    <span class="proj-sub">YOLOv8 + ByteTrack + a Transformer, 0.54 mAP over 162K frames.</span>
+    <span class="proj-eyebrow">Computer Vision &amp; ML · UW</span>
+    <span class="proj-title">Soccer action spotting with spatiotemporal models</span>
+    <span class="proj-sub">YOLOv8 detection, ByteTrack tracking, and a temporal Transformer; 0.54 mAP over 162K frames.</span>
     <span class="proj-open">Explore</span>
   </button>
   <button class="card c-project s2 sci" data-cat="play" data-modal="m-robotics">
@@ -128,7 +129,7 @@
   </article>
 
   <!-- TOOLKIT (about) -->
-  <article class="card c-toolkit s2 r2" data-cat="about">
+  <article class="card c-toolkit s2" data-cat="about">
     <span class="card-label">In my toolkit</span>
     <span class="tk-group">
       <span class="tk-h">Build &amp; AI-native</span>
@@ -175,8 +176,8 @@
       <span class="proj-eyebrow">About</span>
       <h2 class="modal-title" id="m-about-t">An engineer who loves building products and businesses from the ground up.</h2>
       <p>I solve problems from first principles, fad or not. And as computing moves from deterministic to
-      probabilistic, closer to how the real world actually works, I'm leaning into that shift: sharpening
-      computer vision, deep learning, robotics, and quantum computing at the University of Washington.</p>
+      probabilistic, closer to how the real world actually works, I leaned into that shift with a master's at the University of Washington in computer vision, deep
+      learning, robotics, and quantum computing, and I keep sharpening it.</p>
       <p>Until recently I built and scaled products 0 to 1 to 10. Using science and technology to solve business
       problems is my instinct, so product development and management came naturally. Beyond B2B SaaS, I've
       conceptualized, built, launched, and iteratively improved AI copilots for Builders, the product and
@@ -363,14 +364,14 @@
   <div class="modal" id="m-cv" role="dialog" aria-modal="true" aria-labelledby="m-cv-t">
     <button class="modal-x" data-close aria-label="Close">close</button>
     <div class="modal-inner">
-      <span class="proj-eyebrow">Computer Vision · University of Washington</span>
-      <h2 class="modal-title" id="m-cv-t">Watching 90-minute football on a laptop GPU</h2>
+      <span class="proj-eyebrow">Computer Vision &amp; ML · University of Washington</span>
+      <h2 class="modal-title" id="m-cv-t">Soccer action spotting with spatiotemporal models</h2>
       <div class="tabs" role="tablist">
         <button class="tab active" data-tab="deep">Detailed</button>
         <button class="tab" data-tab="tldr">TL;DR</button>
       </div>
       <div class="tab-panel" data-panel="tldr">
-        <p class="tldr-lede">I built a computer-vision pipeline that spots actions in 90-minute football matches and runs on a laptop GPU, not a server farm. It reached 0.54 mAP across 162,000 frames.</p>
+        <p class="tldr-lede">A computer-vision and ML project: spotting and classifying player actions across full soccer matches with spatiotemporal models, object detection and tracking feeding a temporal Transformer. It reached 0.54 mAP across 162,000 frames, and stays efficient enough to run on a laptop GPU.</p>
       </div>
       <div class="tab-panel active" data-panel="deep">
         <h4>Problem</h4>

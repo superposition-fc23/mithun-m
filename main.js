@@ -22,6 +22,28 @@
   }
   reveal(cards);
 
+  /* ── content-fit masonry: size each card's grid-row span to its own content ── */
+  var grid = document.getElementById("grid");
+  function masonry() {
+    if (!grid) return;
+    var ar = parseFloat(getComputedStyle(grid).gridAutoRows) || 2;
+    cards.forEach(function (c) {
+      if (c.classList.contains("hide")) { c.style.gridRowEnd = ""; return; }
+      c.style.gridRowEnd = "span " + Math.ceil((c.offsetHeight + 16) / ar);
+    });
+  }
+  masonry();
+  requestAnimationFrame(masonry);
+  window.addEventListener("load", masonry);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(masonry);
+  if (grid) {
+    grid.querySelectorAll("img").forEach(function (img) {
+      if (!img.complete) img.addEventListener("load", masonry, { once: true });
+    });
+  }
+  var rt;
+  window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(masonry, 120); });
+
   /* ── filters ── */
   var filters = Array.prototype.slice.call(document.querySelectorAll(".filter"));
   filters.forEach(function (btn) {
@@ -35,6 +57,8 @@
         if (match) shown.push(c);
       });
       reveal(shown);
+      masonry();
+      requestAnimationFrame(masonry);
     });
   });
 
