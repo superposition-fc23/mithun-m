@@ -76,7 +76,8 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 .co-row{ display:flex; align-items:center; gap:10px; }
 .co-logo{ width:56px; height:56px; border-radius:12px; flex-shrink:0; display:block; background:#fff; padding:7px; box-sizing:border-box; object-fit:contain; box-shadow:0 1px 3px rgba(0,0,0,.18); }
 .c-project.dark .co-logo{ background:transparent; box-shadow:none; padding:0; }
-.co-logo.wide{ width:120px; padding:8px 12px; }
+.co-logo.wide{ width:130px; padding:8px 12px; }
+.co-logo.xwide{ width:200px; padding:6px 14px; }
 
 .accent-orange{ background:var(--orange); border-color:transparent; color:#fff; }
 .dark{ background:var(--dark); border-color:transparent; color:#ececec; }
@@ -84,6 +85,12 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 .accent-cream{ background:#fde7d2; border-color:transparent; color:var(--ink); }
 .accent-cream .proj-eyebrow{ color:var(--orange); opacity:1; }
 .accent-cream .proj-open{ color:var(--orange); }
+.accent-sky{ background:#dbeafe; border-color:transparent; color:var(--ink); }
+.accent-sky .proj-eyebrow{ color:#1d4ed8; opacity:1; }
+.accent-sky .proj-open{ color:#1d4ed8; }
+.accent-lavender{ background:#ede9fe; border-color:transparent; color:var(--ink); }
+.accent-lavender .proj-eyebrow{ color:#6d28d9; opacity:1; }
+.accent-lavender .proj-open{ color:#6d28d9; }
 .sci{ background:var(--sci); border-color:transparent; color:var(--sci-ink); }
 .sci .proj-eyebrow{ color:#7dd3fc; opacity:1; }
 .c-project:not(.accent-orange):not(.dark):not(.accent-teal):not(.sci) .proj-eyebrow{ color:var(--teal-dk); opacity:1; }
