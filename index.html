@@ -132,16 +132,20 @@
   <article class="card c-toolkit s2" data-cat="about">
     <span class="card-label">In my toolkit</span>
     <span class="tk-group">
-      <span class="tk-h">Build &amp; AI-native</span>
-      <span class="chips"><span>Vibe-coding</span><span>Python</span><span>LangChain</span><span>MCP</span><span>Cursor / Claude Code</span><span>Git</span></span>
+      <span class="tk-h">ML reliability &amp; evals</span>
+      <span class="chips"><span>W&amp;B experiment tracking</span><span>LLM-as-Judge evals</span><span>Three-tier evals (offline · shadow · online)</span><span>Deepeval &amp; Langfuse</span><span>Golden datasets &amp; synthetic tests</span><span>A/B pipelines &amp; regression gates</span><span>Drift &amp; overconfidence tracking</span></span>
     </span>
     <span class="tk-group">
-      <span class="tk-h">Voice, data, product &amp; design</span>
-      <span class="chips"><span>Deepgram</span><span>Twilio</span><span>SQL · ELK</span><span>AWS · GCP · Azure</span><span>Figma</span><span>Gamma</span><span>Pricing</span><span>GTM</span></span>
+      <span class="tk-h">Production ML &amp; inference</span>
+      <span class="chips"><span>Real-time inference pipelines</span><span>RAG &amp; multi-agent systems</span><span>OpenTelemetry tracing</span><span>LoRA fine-tuning</span><span>Resource-constrained training</span><span>Training dynamics &amp; checkpointing</span><span>Context-window monitoring</span></span>
     </span>
     <span class="tk-group">
-      <span class="tk-h">ML, CV &amp; robotics</span>
-      <span class="chips"><span>PyTorch</span><span>RAG</span><span>Multi-agent</span><span>LLM evals</span><span>YOLOv8</span><span>ByteTrack</span><span>Transformers</span><span>LoRA</span><span>ROS / MoveIt</span><span>Gazebo</span><span>Machine unlearning</span></span>
+      <span class="tk-h">Infrastructure &amp; core</span>
+      <span class="chips"><span>Kubernetes</span><span>Docker</span><span>Grafana</span><span>AWS · GCP · Azure</span><span>Python</span><span>PyTorch</span></span>
+    </span>
+    <span class="tk-group">
+      <span class="tk-h">Product &amp; leadership</span>
+      <span class="chips"><span>Product strategy &amp; PRDs</span><span>Roadmapping &amp; prioritization</span><span>Pricing &amp; unit economics</span><span>GTM &amp; experimentation</span><span>Stakeholder &amp; team leadership</span></span>
     </span>
   </article>
 
@@ -182,13 +186,13 @@
       problems is my instinct, so product development and management came naturally. Beyond B2B SaaS, I've
       conceptualized, built, launched, and iteratively improved AI copilots for Builders, the product and
       engineering teams who ship.</p>
-      <p>Right now I'm heads-down on the new normal: vibe-coding, writing evals, and scaling prototypes. I'm most
+      <p>Right now I'm heads-down on the new normal: rapid prototyping, writing evals, and scaling what works. I'm most
       excited about products at the intersection of systems design, machine perception, data infrastructure, and
       quantum information.</p>
       <p>I treated this master's as a career break optimized for information gain, relearning programming, applied
       math, and strategy across computer vision, deep learning, information theory, classical and
       privacy-preserving ML, robot manipulation, quantum algorithms, game theory, and IT strategy.</p>
-      <div class="tags"><span>First principles</span><span>0 to 1 to 10</span><span>AI copilots</span><span>CV · DL · Robotics</span><span>Quantum</span><span>Vibe-coding</span></div>
+      <div class="tags"><span>First principles</span><span>0 to 1 to 10</span><span>AI copilots</span><span>CV · DL · Robotics</span><span>Quantum</span><span>Rapid prototyping</span></div>
     </div>
   </div>
 
@@ -205,7 +209,7 @@
         <li><b>To stay grounded and trade ego for empathy.</b> Doing the hard build myself keeps me honest about what I'm asking engineers to do.</li>
         <li><b>To really understand machine learning</b>, not the headlines, the mechanics, so I can frame problems the way the system actually behaves.</li>
         <li><b>To resist over-engineering and micromanaging.</b> When you know the true cost of complexity, you design for less of it.</li>
-        <li><b>To unlearn and relearn product management, AI-first:</b> vibe-coding, iterating faster, and running GTM, product metrics, and scoping with AI in the loop.</li>
+        <li><b>To unlearn and relearn product management, AI-first:</b> prototyping in code, iterating faster, and running GTM, product metrics, and scoping with AI in the loop.</li>
         <li><b>To ask better questions.</b> The right question, asked early, beats a dozen status updates.</li>
       </ul>
       <p>The ten years are the foundation. The engineering is how I keep it sharp.</p>
@@ -230,20 +234,20 @@
           <div class="vd-line agent"><span class="vd-who">Agent</span>"Got it, let's check your outbox. One moment while I note this down."</div>
           <div class="vd-meta"><span>P50 378ms</span><span class="ok">Ticket created</span><span>3.2s to answer</span></div>
         </div>
-        <p class="tldr-lede">I took a vibe-coded prototype to its first paying customers in about eight weeks, owning the whole thing: the voice pipeline, the prompts, the evaluation harness, the pricing, and the go-to-market. The bet was simple. In voice AI, reliability is what earns trust, so I built two features really well instead of ten features halfway.</p>
+        <p class="tldr-lede">I took an early prototype to its first paying customers in about eight weeks, owning the whole thing: the voice pipeline, the prompts, the evaluation harness, the pricing, and the go-to-market. The bet was simple. In voice AI, reliability is what earns trust, so I built two features really well instead of ten features halfway.</p>
       </div>
       <div class="tab-panel active" data-panel="deep">
         <h4>Problem</h4>
         <p>When a managed service provider's office closes, their clients' problems do not. After-hours calls fall into three bad options: voicemail that quietly loses the caller, a human answering service that reads a script and files a half-useless ticket, or an on-call engineer woken up for a password reset. One design partner was paying over $800 a month and maintaining a 20-step Zapier workflow just to bridge their answering service into ConnectWise. The job to be done was clear: answer every call in seconds, hold a real conversation, resolve what can be resolved, and leave behind a clean, categorized ticket, reliably enough that an MSP would trust it with their own customers.</p>
         <h4>Solution</h4>
-        <p>I joined when this was a vibe-coded prototype and owned it end to end. I evaluated five voice pipelines against one rubric and chose the Deepgram Voice Agent over Twilio, because it folded speech-to-text, the language model, and text-to-speech into a single low-latency loop. Then I went hands-on. I rewrote the four system skills from 637 lines to 274 by treating the model's attention as a budget: front-load the rules that matter, delete the reference tables a model already knows. Quality went up.</p>
+        <p>I joined when this was an early prototype and owned it end to end. I evaluated five voice pipelines against one rubric and chose the Deepgram Voice Agent over Twilio, because it folded speech-to-text, the language model, and text-to-speech into a single low-latency loop. Then I went hands-on. I rewrote the four system skills from 637 lines to 274 by treating the model's attention as a budget: front-load the rules that matter, delete the reference tables a model already knows. Quality went up.</p>
         <p>The hardest problem was turn-taking, knowing when the caller has actually finished speaking. I reframed it as a binary classification problem so the team could tune Deepgram's endpointing with precision, recall, and an F1 target instead of trial and error. Because the product has to be trusted, I designed a fallback chain so that even a three-second hang-up still produces a ticket with the caller's number, and I wrote a 20-metric, three-tier evaluation framework (offline, shadow, and live) as the gate between alpha, beta, and GA. Alongside the build I assessed and reallocated a seven-person PM team, led hiring for a growth role, and left a structured handover across six documents.</p>
         <h4>Result</h4>
-        <p>The prototype reached alpha monetization in roughly eight weeks, with the pipeline benchmarking at 378ms median response and comfortable headroom on the latency target. I grew the funnel from three design partners to more than 35 prospects, designed a single outreach that converted nearly half the demos it reached, and priced the product to land several times cheaper than the incumbent on economics I had actually modeled. I also vibe-coded the GTM plumbing: Python pipelines pulling from ClickUp, Fathom, and HubSpot to refresh the customer-intelligence dashboards on their own.</p>
+        <p>The prototype reached alpha monetization in roughly eight weeks, with the pipeline benchmarking at 378ms median response and comfortable headroom on the latency target. I grew the funnel from three design partners to more than 35 prospects, designed a single outreach that converted nearly half the demos it reached, and priced the product to land several times cheaper than the incumbent on economics I had actually modeled. I also prototyped the GTM plumbing: Python pipelines pulling from ClickUp, Fathom, and HubSpot to refresh the customer-intelligence dashboards on their own.</p>
         <h4>Learnings</h4>
         <p>Three things stuck. Reliability earns trust, not features, so the real MVP was two features done well. Measurement is a prerequisite, not a follow-up, so I instrumented the pipeline before there was any traffic to measure. And the highest-leverage thing a PM can do is close the gap between a metric and the felt experience: "F1 score" moved nobody until I drew the exact moment the agent talks over a caller.</p>
       </div>
-      <div class="tags"><span>Deepgram</span><span>Twilio</span><span>LLM evals</span><span>Vibe-coding</span><span>Pricing</span><span>GTM</span><span>Team leadership</span></div>
+      <div class="tags"><span>Deepgram</span><span>Twilio</span><span>LLM evals</span><span>Rapid prototyping</span><span>Pricing</span><span>GTM</span><span>Team leadership</span></div>
     </div>
   </div>
 
