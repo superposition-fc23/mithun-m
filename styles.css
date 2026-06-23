@@ -54,7 +54,7 @@ button.card:hover, .imgcard:hover{ transform:translateY(-4px); box-shadow:0 22px
 /* INTRO */
 .c-intro{ justify-content:flex-start; gap:14px; }
 .intro-top{ display:flex; align-items:center; gap:14px; }
-.avatar{ width:64px; height:64px; border-radius:18px; flex-shrink:0; object-fit:cover; }
+.avatar{ width:72px; height:72px; border-radius:18px; flex-shrink:0; object-fit:cover; }
 .intro-meta{ display:flex; flex-direction:column; }
 .wave{ font-family:'Inter',system-ui,-apple-system,sans-serif; font-weight:500; font-size:14px; color:var(--teal-dk); }
 .intro-name{ font-family:'Inter',system-ui,-apple-system,sans-serif; font-weight:800; font-size:23px; color:var(--ink); letter-spacing:-.01em; line-height:1.12; }
