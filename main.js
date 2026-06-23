@@ -112,31 +112,4 @@
     });
   });
 
-  /* ── slow mode: inertia (lerp) wheel scrolling ── */
-  var toggle = document.getElementById("modeToggle");
-  var active = false, raf = null, current = window.scrollY, target = window.scrollY;
-  function tick() {
-    var d = target - current;
-    if (Math.abs(d) < 0.5) { current = target; window.scrollTo(0, Math.round(current)); raf = null; return; }
-    current += d * 0.09; window.scrollTo(0, current); raf = requestAnimationFrame(tick);
-  }
-  function onWheel(e) {
-    if (e.target.closest && e.target.closest(".modal")) return; /* let modals scroll natively */
-    e.preventDefault();
-    var delta = e.deltaY; if (e.deltaMode === 1) delta *= 40; else if (e.deltaMode === 2) delta *= innerHeight;
-    var max = document.documentElement.scrollHeight - innerHeight;
-    target = Math.max(0, Math.min(target + delta, max));
-    if (!raf) raf = requestAnimationFrame(tick);
-  }
-  window.addEventListener("scroll", function () { if (!raf) { current = target = window.scrollY; } }, { passive: true });
-  if (toggle && !prefersReduced) {
-    toggle.addEventListener("click", function () {
-      active = !active;
-      toggle.setAttribute("aria-pressed", active ? "true" : "false");
-      if (active) { current = target = window.scrollY; window.addEventListener("wheel", onWheel, { passive: false }); }
-      else { window.removeEventListener("wheel", onWheel); if (raf) { cancelAnimationFrame(raf); raf = null; } }
-    });
-  } else if (toggle) {
-    toggle.style.display = "none";
-  }
 })();
