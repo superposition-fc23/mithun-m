@@ -104,6 +104,8 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 
 /* ETHOS (front-and-center philosophy card) */
 .c-ethos{ background:linear-gradient(155deg,#0f2e2b,#134e48); border-color:transparent; color:#eafaf6; justify-content:flex-start; gap:10px; }
+.c-eureka{ background:linear-gradient(155deg,#fff7ed,#fef3c7); border-color:transparent; justify-content:flex-start; gap:10px; }
+.c-eureka .proj-eyebrow{ color:#a16207; opacity:1; }
 .c-ethos .proj-eyebrow{ color:#5eead4; opacity:1; }
 .ethos-title{ font-family:'Inter',system-ui,-apple-system,sans-serif; font-weight:800; font-size:25px; line-height:1.16; letter-spacing:-.015em; color:#fff; margin-top:2px; }
 .ethos-sub{ font-size:14.5px; line-height:1.55; color:rgba(234,250,246,.86); }
