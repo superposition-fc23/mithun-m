@@ -52,10 +52,6 @@ button{ font:inherit; color:inherit; background:none; border:none; cursor:pointe
 .card{ position:relative; border-radius:var(--rad); background:var(--card); border:1px solid var(--line); padding:22px;
   overflow:hidden; display:flex; flex-direction:column; box-shadow:0 1px 2px rgba(26,26,26,.04);
   transition:transform .3s var(--ease), box-shadow .3s var(--ease); opacity:0; transform:translateY(16px) scale(.985); }
-.card::before{ content:""; position:absolute; top:0; left:0; right:0; height:3px; background:var(--cat-stripe, transparent); z-index:2; pointer-events:none; }
-.card[data-cat="about"]{ --cat-stripe:#f59e0b; }
-.card[data-cat="work"]{ --cat-stripe:#6366f1; }
-.card[data-cat="play"]{ --cat-stripe:#f43f5e; }
 .card.in{ opacity:1; transform:none; }
 button.card:hover, .imgcard:hover{ transform:translateY(-4px); box-shadow:0 22px 44px -26px rgba(26,26,26,.4); }
 .card.hide{ display:none; }
@@ -107,16 +103,15 @@ button.card:hover .proj-open::after{ transform:translateX(4px); }
 .c-project:not(.accent-orange):not(.dark):not(.accent-teal):not(.sci) .proj-open{ color:var(--teal-dk); }
 
 /* ETHOS (front-and-center philosophy card) */
-.c-ethos{ background:linear-gradient(155deg,#0f2e2b,#134e48); border-color:transparent; color:#eafaf6; justify-content:flex-start; gap:10px; }
+.c-ethos{ background:linear-gradient(155deg,#fbfaf6,#f1f0ec); border-color:transparent; justify-content:flex-start; gap:10px; }
 .c-eureka{ background:linear-gradient(155deg,#fff7ed,#fef3c7); border-color:transparent; justify-content:flex-start; gap:10px; }
 .c-eureka .proj-eyebrow{ color:#a16207; opacity:1; }
 .c-eureka .ethos-title{ color:var(--ink); }
 .c-eureka .ethos-sub{ color:var(--body); }
 .c-eureka .proj-open{ color:#a16207; margin-top:auto; }
-.c-ethos .proj-eyebrow{ color:#5eead4; opacity:1; }
-.ethos-title{ font-family:'Inter',system-ui,-apple-system,sans-serif; font-weight:800; font-size:25px; line-height:1.16; letter-spacing:-.015em; color:#fff; margin-top:2px; }
-.ethos-sub{ font-size:14.5px; line-height:1.55; color:rgba(234,250,246,.86); }
-.c-ethos .proj-open{ color:#5eead4; margin-top:auto; }
+.ethos-title{ font-family:'Inter',system-ui,-apple-system,sans-serif; font-weight:800; font-size:25px; line-height:1.16; letter-spacing:-.015em; color:var(--ink); margin-top:2px; }
+.ethos-sub{ font-size:14.5px; line-height:1.55; color:var(--body); }
+.c-ethos .proj-open{ color:var(--teal-dk); margin-top:auto; }
 
 /* STAT */
 .c-stat{ justify-content:center; gap:7px; }
