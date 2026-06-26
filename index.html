@@ -53,13 +53,6 @@
     <span class="proj-open">Read why</span>
   </button>
 
-  <!-- EUREKA (about) -->
-  <article class="card c-eureka s2" data-cat="about">
-    <span class="proj-eyebrow">Eureka</span>
-    <span class="ethos-title">3000+ abstracts. Two courses. One pivot.</span>
-    <span class="ethos-sub">Cataloging electronic theses and dissertations at the UW Libraries under Cate Gerhart. 3000+ abstracts across deep learning, robotics, quantum physics, epidemiology, ancient languages, Japanese poetry, forestry, and Native American studies, each a tiny window into what someone, somewhere, is currently figuring out. That breadth rewrote my plan: Information Systems out, ECE in. Then Statistical Learning and Computer Vision rewired how I read papers and frame evals, YOLOv8 detection into ByteTrack tracking into a temporal transformer at 0.54 mAP taught me the bottleneck is almost never the model, it is the data, the retrieval, and the labels around it.</span>
-  </article>
-
   <!-- CALLOUT TILES + fun fact -->
   <article class="card c-stat" data-cat="work"><span class="stat-n">$2.5M</span><span class="stat-l">AI copilot pipeline, in 5 months</span></article>
   <article class="card c-stat alt" data-cat="work"><span class="stat-n">2B+</span><span class="stat-l">transactions at 99% reliability</span></article>
@@ -134,6 +127,14 @@
     </span>
   </article>
 
+  <!-- EUREKA (about) -- relearning, wider scope -->
+  <button class="card c-eureka s2" data-cat="about" data-modal="m-eureka">
+    <span class="proj-eyebrow">Relearning</span>
+    <span class="ethos-title">Wider, on purpose.</span>
+    <span class="ethos-sub">Cataloged 3000+ ETD abstracts at the UW Libraries under Cate Gerhart, alongside graduate work in Statistical Learning and Computer Vision. A deliberate trip back to first principles, at a wider angle.</span>
+    <span class="proj-open">Read more</span>
+  </button>
+
   <!-- CONTACT (about) - fills empty slot beside aquaponics -->
   <article class="card c-contact s2 dark" data-cat="about">
     <span class="contact-line">Building scalable AI across apps, multimodal, infra, robotics. Open full-time.</span>
@@ -200,6 +201,19 @@
       math, and strategy across computer vision, deep learning, information theory, classical and
       privacy-preserving ML, robot manipulation, quantum algorithms, game theory, and IT strategy.</p>
       <div class="tags"><span>First principles</span><span>0 to 1 to 10</span><span>AI copilots</span><span>CV · DL · Robotics</span><span>Quantum</span><span>Rapid prototyping</span></div>
+    </div>
+  </div>
+
+  <!-- EUREKA -->
+  <div class="modal" id="m-eureka" role="dialog" aria-modal="true" aria-labelledby="m-eureka-t">
+    <button class="modal-x" data-close aria-label="Close">close</button>
+    <div class="modal-inner">
+      <span class="proj-eyebrow">Relearning</span>
+      <h2 class="modal-title" id="m-eureka-t">Wider, on purpose</h2>
+      <p>Cataloging electronic theses and dissertations at the UW Libraries under Cate Gerhart, who taught me what good management actually looks like.</p>
+      <p>3000+ abstracts across deep learning, robotics, quantum physics, epidemiology, ancient languages, Japanese poetry, forestry, Native American studies, and everything in between. Each one a tiny window into what someone, somewhere, is currently figuring out. The breadth keeps an engineer honest about what AI is being asked to serve.</p>
+      <p>In parallel, Statistical Learning and Computer Vision rewired how I read papers and frame evals. YOLOv8 detection feeding ByteTrack tracking feeding a temporal transformer at 0.54 mAP over 162K frames taught me what builds and what doesn't. The bottleneck is almost never the model. It is the data, the retrieval, and the labels around it.</p>
+      <div class="tags"><span>Cross-disciplinary</span><span>First principles</span><span>Evals</span><span>Computer vision</span></div>
     </div>
   </div>
 
