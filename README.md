@@ -11,7 +11,7 @@ portfolio-site/
   styles.css        # all styling + responsive + motion
   main.js           # scroll progress, reveal-on-scroll, project tabs, active nav
   assets/img/       # product screenshots
-  resume/           # the two print-ready resumes the site links to
+  resume/           # print-ready resumes the site links to (.html + editable .md per version)
 ```
 
 All links are **relative**, so the site works whether it is served from
@@ -47,9 +47,18 @@ then point your DNS (A records or a CNAME) at GitHub Pages per GitHub's docs.
 
 ## Résumé
 
-The "Résumé" card links to `resume/resume-mithun-manjunath.html` (one combined version covering
-building, scaling, and managing). To produce a PDF: open it in Chrome, Cmd/Ctrl+P, Save as PDF.
-The editable Markdown lives in `../resumes/resume-mithun-manjunath.md`.
+The nav's "Résumé" dropdown and the contact card both link to two role-specific versions, both
+in `resume/` and both the source of truth (edit the `.html` directly; each has a sibling `.md`
+kept in sync by hand):
+
+- `resume/resume-ai-product-manager.html` (+ `.md`): AI Product Manager roles, GTM/roadmap-led.
+- `resume/resume-ai-builder.html` (+ `.md`): AI Builder / FDE roles, more technical bullets per
+  company.
+
+To produce a PDF from either: open it in Chrome, Cmd/Ctrl+P, Save as PDF.
+
+`resume/resume-mithun-manjunath.html` (a combined, role-agnostic version) still exists in the
+same folder for ad hoc use but is intentionally **not** linked from the site.
 
 
 ## Editing content
