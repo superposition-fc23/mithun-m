@@ -91,17 +91,12 @@
 
   <section>
     <p class="summary">
-      AI builder and platform engineer with <b>10 years shipping products from 0 to 1 to 10</b> at seed to Series E
-      startups, 5 of them bootstrapping a SaaS company. I work on the <b>API and data-model layer</b> that lets one
-      platform serve multiple products instead of one-off integrations: partnering with engineering on the
-      architecture that unifies Support, Build, and Grow on one system-of-record at DevRev, and architecting a
-      multi-source compute engine at Xoxoday (2B+ transactions, 5M+ users) serving both web and mobile. At Shoptree
-      I built the earlier version of that instinct myself: a single data model and REST API marketplace (8+
-      integrations) so 300+ mid-sized and enterprise customers ran POS, inventory, and supply chain on one
-      platform. I treat <b>latency, reliability, and infra cost as one tradeoff surface</b>, not three separate
-      goals: sub-400ms voice AI priced <b>7x cheaper</b> than the incumbent (MSPbots), sub-3s RAG at <b>10K+
-      queries/day</b> (DevRev), 99% reliability while cutting infra spend <b>30%</b> (Xoxoday), and sub-13s checkout
-      over 2G (Shoptree). Daily Python across RAG, multi-agent systems, and computer vision.
+      AI builder and platform engineer with 10 years shipping products from 0 to 1 to 10 at seed to Series E
+      startups, 5 of them bootstrapping a SaaS company. I own the API and data-model layer that lets one platform
+      serve multiple products instead of one-off integrations, and I treat latency, reliability, and infra cost as
+      one tradeoff surface, not three separate goals. Recently took a real-time voice AI agent from prototype to
+      alpha monetization solo, owning the pipeline, the evals, and the economics. Daily Python across RAG,
+      multi-agent systems, and computer vision.
     </p>
   </section>
 
@@ -130,9 +125,9 @@
       </div>
       <div class="job-sub">B2B SaaS for managed service providers &middot; 500+ customers</div>
       <ul>
-        <li>Selected the production <b>voice pipeline</b> over 4 candidates via controlled load testing, <b>Deepgram+Twilio at P50 378ms / P95 437ms</b> (46% headroom on the 800ms SLA); modeled unit economics against Deepgram STT/TTS and Azure GPT inference cost to price <b>7x cheaper</b> than the incumbent.</li>
-        <li>Designed a <b>PSA-agnostic intake data model</b> and integration layer (ConnectWise, Autotask, Halo) so one voice pipeline plugged into any MSP's ticketing backend without bespoke integration work; rewrote the skill/prompt harness <b>637 to 274 lines</b> with quality up.</li>
-        <li>Authored a <b>20-metric eval framework</b> (3-tier: offline to shadow to online) and a 7-field ticket-creation failsafe via codebase analysis, <b>100% ticket reliability</b> even on sub-3s disconnects; shipped Python pipelines (ClickUp/Fathom/HubSpot via MCP) powering GTM dashboards.</li>
+        <li>Selected the production voice pipeline over 4 candidates via controlled load testing, Deepgram+Twilio at <b>P50 378ms / P95 437ms</b> (46% headroom on the 800ms SLA); modeled unit economics against Deepgram STT/TTS and Azure GPT inference cost to price 7x cheaper than the incumbent.</li>
+        <li>Designed a PSA-agnostic intake data model and integration layer (ConnectWise, Autotask, Halo) so one voice pipeline plugged into any MSP's ticketing backend without bespoke integration work; rewrote the skill/prompt harness <b>637 to 274 lines</b> with quality up.</li>
+        <li>Authored a 20-metric eval framework (3-tier: offline to shadow to online) and a 7-field ticket-creation failsafe via codebase analysis, <b>100% ticket reliability</b> even on sub-3s disconnects; shipped Python pipelines (ClickUp/Fathom/HubSpot via MCP) powering GTM dashboards.</li>
         <li>Took AI Ticket Intake from prototype to <b>alpha monetization in about 8 weeks</b>, growing the pipeline from 3 design partners to 35+ prospects.</li>
       </ul>
     </div>
@@ -144,10 +139,10 @@
       </div>
       <div class="job-sub">OneCRM platform: Support, Build, and Grow unified on one system-of-record, now 6B+ API calls/year platform-wide (DevRev, 2025) &middot; Series A ($85M seed)</div>
       <ul>
-        <li>Partnered with the <b>AI engineering lead</b> on the API and data-model architecture unifying Support, Build, and Grow on one system-of-record, pressure-testing the design against product requirements and customer workflows.</li>
-        <li>Architected a production <b>RAG system</b> (LangChain, MongoDB, hybrid + self-query retrieval) serving <b>10K+ queries/day</b> at under 3s, lifting deflection from <b>40% to 90%</b> for 50+ enterprise customers.</li>
-        <li>Shipped a <b>DNN ticket classifier</b> (K-means + NGBoost) routing 10K+ tickets/day at <b>F1 0.83</b>, saving 15 support hours/day; designed multi-agent LLM orchestration cutting repetitive PM work <b>60%</b>.</li>
-        <li>Led <b>10 PMs</b> spanning Support, Build, Grow, and Platform across the US, Slovenia, and India; launched and scaled the Build product line to its first 50 mid-sized and enterprise customers.</li>
+        <li>Partnered with the AI engineering lead on the API and data-model architecture unifying Support, Build, and Grow on one system-of-record, pressure-testing the design against product requirements and customer workflows.</li>
+        <li>Architected a production RAG system (LangChain, MongoDB, hybrid + self-query retrieval) serving 10K+ queries/day at under 3s, lifting deflection from <b>40% to 90%</b> for 50+ enterprise customers.</li>
+        <li>Shipped a DNN ticket classifier (K-means + NGBoost) routing 10K+ tickets/day at <b>F1 0.83</b>, saving 15 support hours/day; designed multi-agent LLM orchestration cutting repetitive PM work 60%.</li>
+        <li>Led 10 PMs spanning Support, Build, Grow, and Platform across the US, Slovenia, and India; launched and scaled the Build product line to its first 50 mid-sized and enterprise customers.</li>
       </ul>
     </div>
 
@@ -158,10 +153,10 @@
       </div>
       <div class="job-sub">Incentive &amp; commission management platform &middot; Series C ($53M revenue)</div>
       <ul>
-        <li>Architected a <b>multi-source, real-time compute platform</b> (Python, SQL, AWS, Redis; ETL via Azure Data Factory) processing <b>2B+ transactions at 99% reliability</b> for <b>5M+ users</b> across 50 enterprise customers, with a connector marketplace unifying incentive computation across the web dashboard and mobile app.</li>
+        <li>Architected a multi-source, real-time compute platform (Python, SQL, AWS, Redis; ETL via Azure Data Factory) processing <b>2B+ transactions at 99% reliability</b> for 5M+ users across 50 enterprise customers, with a connector marketplace unifying incentive computation across the web dashboard and mobile app.</li>
         <li>Built a low-code, tree-based dynamic formula builder (custom expression-evaluation engine) so non-technical users compose complex incentive logic in-browser, cutting enterprise implementation time <b>70%</b>.</li>
         <li>Owned product strategy and a 2-year roadmap shaped by 100+ mid-size and enterprise customer interviews and competitive positioning; partnered with sales to close strategic accounts.</li>
-        <li>Recruited and led a 35-person org (5 PMs, 3 TPMs, 5 analysts); cut infrastructure cost <b>30%</b> while holding 99% reliability, and presented quarterly business reviews to the C-suite and board.</li>
+        <li>Recruited and led a 35-person org (5 PMs, 3 TPMs, 5 analysts); cut infrastructure cost 30% while holding 99% reliability, and presented quarterly business reviews to the C-suite and board.</li>
       </ul>
     </div>
 
@@ -172,9 +167,9 @@
       </div>
       <div class="job-sub">POS &amp; supply-chain SaaS &middot; bootstrapped startup</div>
       <ul>
-        <li>Designed a <b>single data model</b> spanning POS, 5-level multi-echelon inventory, and payments so restaurants could run billing, stock, and supply chain on one platform instead of stitching together point solutions.</li>
-        <li>Architected a <b>REST API marketplace</b> and webhook layer (8+ integrations across payment terminals, delivery platforms, and POS hardware) with custom hardware SDKs bridging iOS/Android to card terminals and thermal printers, cutting merchant implementation time <b>70%</b>.</li>
-        <li>Built an <b>offline-first architecture</b> holding 99% uptime and sub-13s checkout on 2G networks, leaning on client-side compute so billing stayed robust through outages.</li>
+        <li>Designed a single data model spanning POS, 5-level multi-echelon inventory, and payments so restaurants could run billing, stock, and supply chain on one platform instead of stitching together point solutions.</li>
+        <li>Architected a REST API marketplace and webhook layer (8+ integrations across payment terminals, delivery platforms, and POS hardware) with custom hardware SDKs bridging iOS/Android to card terminals and thermal printers, cutting merchant implementation time <b>70%</b>.</li>
+        <li>Built an offline-first architecture holding <b>99% uptime</b> and sub-13s checkout on 2G networks, leaning on client-side compute so billing stayed robust through outages.</li>
         <li>Bootstrapped the product <b>0 to $1M revenue</b> and 300+ mid-sized and enterprise customers in 18 months, with no external funding; shipped v2.0 cutting churn 14% to 7% and lifting ARPU 30%.</li>
       </ul>
     </div>
@@ -188,22 +183,22 @@
           <div class="proj-name">Soccer Action Spotting (CV)</div>
           <div class="proj-stack">PyTorch · YOLO · ByteTrack · Transformer</div>
           <ul>
-            <li>CV pipeline on 90-min videos: <b>0.54 mAP / 66% val acc</b>, <b>162K frames</b>; custom temporal Transformer beat LSTM baseline.</li>
-            <li>Novel optimizations cut compute <b>70%</b> (feature caching, frame filtering) for M1-GPU / resource-constrained deployment.</li>
+            <li>CV pipeline on 90-min videos: <b>0.54 mAP / 66% val acc</b>, 162K frames; custom temporal Transformer beat LSTM baseline.</li>
+            <li>Novel optimizations cut compute 70% (feature caching, frame filtering) for M1-GPU / resource-constrained deployment.</li>
           </ul>
         </div>
         <div class="proj">
           <div class="proj-name">Obstacle-Aware Trajectory Planning (Robotics)</div>
           <div class="proj-stack">ROS · MoveIt · OMPL RRTConnect</div>
           <ul>
-            <li>Collision-free grasping on a Kinova Gen3 Lite arm; <b>100% sim success</b> and <b>98% pre-grasp</b> over 56 physical trials (sim-to-real).</li>
+            <li>Collision-free grasping on a Kinova Gen3 Lite arm; 100% sim success and <b>98% pre-grasp</b> over 56 physical trials (sim-to-real).</li>
           </ul>
         </div>
         <div class="proj">
           <div class="proj-name">Machine Unlearning for LLMs (Privacy ML)</div>
           <div class="proj-stack">LoRA · Phi-2 · Llama-2</div>
           <ul>
-            <li>Gradient-ascent vs gradient-difference unlearning; verbatim memorization to <b>0</b> with utility preserved, probed via membership-inference.</li>
+            <li>Gradient-ascent vs gradient-difference unlearning; verbatim memorization to 0 with utility preserved, probed via membership-inference.</li>
           </ul>
         </div>
       </div>
