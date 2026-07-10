@@ -47,17 +47,25 @@ POS & supply-chain SaaS · bootstrapped startup
 - Bootstrapped the product **0 to $1M revenue** and 300+ mid-sized and enterprise customers in 18 months, with no external funding.
 - Led 200+ customer discovery interviews; shipped v2.0 cutting churn 14% to 7% and lifting ARPU 30%.
 
-## Core Competencies
+## Toolkit
 
-- **Product:** 0 to 1, platform strategy, PRDs, roadmapping, prioritization, GTM, pricing & unit economics
-- **AI / Technical:** Voice AI, RAG, API & data-model design, LLM evals, Python, system architecture
-- **Leadership:** Distributed teams, leadership without authority, C-suite QBRs, hiring
-- **AI-augmented PM:** Mixture-of-Experts orchestration, persistent context, automated reporting
+- **Voice AI:** Deepgram, Twilio, turn-taking & endpointing, interruption handling, real-time voice pipelines, ASR & TTS evaluation, P50/P95 latency budgeting
+- **ML reliability & evals:** W&B, LLM-as-Judge, three-tier evals (offline/shadow/online), Deepeval, Langfuse, golden datasets & synthetic tests, A/B pipelines & regression gates, drift & overconfidence tracking
+- **Production ML:** Real-time inference pipelines, RAG & multi-agent systems, OpenTelemetry tracing, LoRA fine-tuning, context-window monitoring
+- **Infrastructure:** Kubernetes, Docker, Grafana, AWS/GCP/Azure, Python, PyTorch
+- **Product:** Product strategy & PRDs, roadmapping & prioritization, pricing & unit economics, GTM & experimentation, stakeholder & team leadership
+- **Design:** Figma, Gamma
+
+## Selected Projects
+
+- **Soccer Action Spotting (CV):** YOLOv8 + ByteTrack + Transformer temporal encoder; 0.54 mAP across 162K frames, 40% compute saved via feature caching.
+- **Obstacle-Aware Trajectory Planning (Robotics):** collision-free grasping on a Kinova Gen3 Lite arm (ROS/MoveIt/OMPL RRTConnect); 100% sim success and 98% pre-grasp over 56 physical trials.
+- **Machine Unlearning for LLMs (Privacy ML):** gradient-ascent vs gradient-difference unlearning with LoRA on Phi-2/Llama-2; verbatim memorization to 0 with utility preserved.
 
 ## Education
 
 **University of Washington**: Dual Master's, Information Systems & Computer Engineering
-Expected Dec 2026 · GPA 3.81 · Seattle, WA
+Expected Aug 2026 · GPA 3.81 · Seattle, WA
 Coursework: IT Strategy, Business Decision Models, Deep Learning, Computer Vision
 
 **PES Institute of Technology, India**: B.E., Computer Engineering · 2010

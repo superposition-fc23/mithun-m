@@ -56,6 +56,10 @@
   .edu-school{ color:var(--accent); font-weight:600; font-size:9.4pt; }
   .edu-meta{ color:var(--muted); font-size:8.6pt; }
   .kw{ color:var(--accent); font-weight:600; }
+  .proj{ font-size:9.3pt; margin-bottom:8px; line-height:1.5; }
+  .proj:last-child{ margin-bottom:0; }
+  .proj b{ color:var(--ink); font-weight:700; }
+  .proj .st{ color:var(--muted); }
 
   @media print{
     body{ background:#fff; font-size:10pt; }
@@ -154,22 +158,31 @@
   </section>
 
   <section>
+    <h2>Toolkit</h2>
+    <div class="skills">
+      <div class="row"><span class="k">Voice AI</span><span class="v">Deepgram, Twilio, turn-taking &amp; endpointing, interruption handling, real-time voice pipelines, ASR &amp; TTS evaluation, P50/P95 latency budgeting</span></div>
+      <div class="row"><span class="k">ML reliability &amp; evals</span><span class="v">W&amp;B, LLM-as-Judge, three-tier evals (offline/shadow/online), Deepeval, Langfuse, golden datasets &amp; synthetic tests, A/B pipelines &amp; regression gates, drift &amp; overconfidence tracking</span></div>
+      <div class="row"><span class="k">Production ML</span><span class="v">Real-time inference pipelines, RAG &amp; multi-agent systems, OpenTelemetry tracing, LoRA fine-tuning, context-window monitoring</span></div>
+      <div class="row"><span class="k">Infrastructure</span><span class="v">Kubernetes, Docker, Grafana, AWS/GCP/Azure, Python, PyTorch</span></div>
+      <div class="row"><span class="k">Product</span><span class="v">Product strategy &amp; PRDs, roadmapping &amp; prioritization, pricing &amp; unit economics, GTM &amp; experimentation, stakeholder &amp; team leadership</span></div>
+      <div class="row"><span class="k">Design</span><span class="v">Figma, Gamma</span></div>
+    </div>
+  </section>
+
+  <section>
     <div class="grid2">
       <div>
-        <h2>Core Competencies</h2>
-        <div class="skills" style="grid-template-columns:1fr;">
-          <div class="row"><span class="k">Product</span><span class="v">0 to 1, platform strategy, PRDs, roadmapping, prioritization, GTM, pricing &amp; unit economics</span></div>
-          <div class="row"><span class="k">AI / Technical</span><span class="v">Voice AI, RAG, API &amp; data-model design, LLM evals, Python, system architecture</span></div>
-          <div class="row"><span class="k">Leadership</span><span class="v">Distributed teams, leadership without authority, C-suite QBRs, hiring</span></div>
-          <div class="row"><span class="k">AI-augmented</span><span class="v">Mixture-of-Experts orchestration, persistent context, automated reporting</span></div>
-        </div>
+        <h2>Selected Projects</h2>
+        <div class="proj"><b>Soccer Action Spotting</b> <span class="st">(CV)</span>: YOLOv8 + ByteTrack + Transformer temporal encoder; 0.54 mAP across 162K frames, 40% compute saved via feature caching.</div>
+        <div class="proj"><b>Obstacle-Aware Trajectory Planning</b> <span class="st">(Robotics)</span>: collision-free grasping on a Kinova Gen3 Lite arm (ROS/MoveIt/OMPL RRTConnect); 100% sim success and 98% pre-grasp over 56 physical trials.</div>
+        <div class="proj"><b>Machine Unlearning for LLMs</b> <span class="st">(Privacy ML)</span>: gradient-ascent vs gradient-difference unlearning with LoRA on Phi-2/Llama-2; verbatim memorization to 0 with utility preserved.</div>
       </div>
       <div>
         <h2>Education</h2>
         <div class="edu-item">
           <div class="edu-deg">Dual Master's, Information Systems &amp; Computer Engineering</div>
           <div class="edu-school">University of Washington</div>
-          <div class="edu-meta">Expected Dec 2026 · GPA 3.81 · Seattle, WA</div>
+          <div class="edu-meta">Expected Aug 2026 · GPA 3.81 · Seattle, WA</div>
           <div class="edu-meta" style="margin-top:3px;">IT Strategy, Business Decision Models, Deep Learning, Computer Vision</div>
         </div>
         <div class="edu-item">

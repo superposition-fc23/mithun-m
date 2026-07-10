@@ -74,7 +74,7 @@ POS & supply-chain SaaS · bootstrapped startup
 ## Education
 
 **University of Washington**: Dual Master's, Computer Engineering & Information Systems
-Expected Dec 2026 · GPA 3.81 · Seattle, WA
+Expected Aug 2026 · GPA 3.81 · Seattle, WA
 Coursework: Computer Vision, Deep Learning, Advanced Statistical Learning, IT Strategy
 
 **PES Institute of Technology, India**: B.E., Computer Engineering · 2010
