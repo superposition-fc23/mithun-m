@@ -11,7 +11,7 @@ portfolio-site/
   styles.css        # all styling + responsive + motion
   main.js           # scroll progress, reveal-on-scroll, project tabs, active nav
   assets/img/       # product screenshots
-  resume/           # print-ready resumes the site links to (.html + editable .md per version)
+  resume/           # print-ready resumes, sent per application (not linked from the site)
 ```
 
 All links are **relative**, so the site works whether it is served from
@@ -47,18 +47,20 @@ then point your DNS (A records or a CNAME) at GitHub Pages per GitHub's docs.
 
 ## Résumé
 
-The nav's "Résumé" dropdown and the contact card both link to two role-specific versions, both
-in `resume/` and both the source of truth (edit the `.html` directly; each has a sibling `.md`
-kept in sync by hand):
+None of the resumes in `resume/` are linked from the site anymore. Two site visitors (e.g. two
+hiring managers who each received a different role-tailored resume) could otherwise land on the
+same portfolio page and spot a link to the other version, which reads as inconsistent. Resumes
+are sent directly per application instead.
+
+The files still live in `resume/` and are each their own source of truth (edit the `.html`
+directly; each has a sibling `.md` kept in sync by hand):
 
 - `resume/resume-ai-product-manager.html` (+ `.md`): AI Product Manager roles, GTM/roadmap-led.
 - `resume/resume-ai-builder.html` (+ `.md`): AI Builder / FDE roles, more technical bullets per
   company.
+- `resume/resume-mithun-manjunath.html`: a combined, role-agnostic version for ad hoc use.
 
-To produce a PDF from either: open it in Chrome, Cmd/Ctrl+P, Save as PDF.
-
-`resume/resume-mithun-manjunath.html` (a combined, role-agnostic version) still exists in the
-same folder for ad hoc use but is intentionally **not** linked from the site.
+To produce a PDF from any of them: open it in Chrome, Cmd/Ctrl+P, Save as PDF.
 
 
 ## Editing content

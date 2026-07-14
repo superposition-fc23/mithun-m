@@ -62,24 +62,6 @@
     });
   });
 
-  /* ── résumé dropdown ── */
-  var dd = document.getElementById("resumeDD");
-  if (dd) {
-    var ddBtn = dd.querySelector(".dd-btn");
-    function closeDD() { dd.classList.remove("open"); ddBtn.setAttribute("aria-expanded", "false"); }
-    ddBtn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var open = dd.classList.toggle("open");
-      ddBtn.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-    document.addEventListener("click", function (e) {
-      if (!dd.contains(e.target)) closeDD();
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeDD();
-    });
-  }
-
   /* ── modals ── */
   var root = document.getElementById("modalRoot");
   var modals = root ? Array.prototype.slice.call(root.querySelectorAll(".modal")) : [];
