@@ -7,11 +7,11 @@ Seattle, WA · mithun2389@gmail.com · +1 734-277-8735 · LinkedIn: https://www.
 
 ## Summary
 
-AI Product Manager with 10 years building and scaling products from 0 to 1 to 10 at seed to Series E startups, including 5 years bootstrapping a SaaS restaurant OS to $1M. I own the full arc: 0 to 1 product strategy, the system and data-model architecture behind multi-product platforms now serving 400+ mid-size and enterprise customers, and the GTM and team that turn it into revenue, from 2B+ transactions at 99% reliability to a 47% top-channel demo conversion. The last three years have been about building reliable AI products end to end, a production RAG copilot at DevRev and a real-time voice AI agent at MSPbots, both backed by evals, harness engineering, and observability, and sharpened by hands-on machine learning and computer vision projects at UW. Leads with data, ships reliably, and earns trust.
+AI Product Manager with 10 years building and scaling products from 0 to 1 to 10 at seed to Series E startups, including 5 years bootstrapping a SaaS restaurant OS to $1M. I own the full arc: 0 to 1 strategy, the data-model architecture behind multi-product platforms now serving 400+ mid-size and enterprise customers, and the GTM and team that turn it into revenue (2B+ transactions at 99% reliability, 47% demo conversion). The last three years have been about building reliable AI products, a production RAG copilot at DevRev and a voice AI agent at MSPbots, both backed by evals, harness engineering, and observability, sharpened by hands-on ML and computer vision projects at UW. Leads with data, ships reliably, earns trust.
 
 ## Experience
 
-### MSPbots: AI Product Manager
+### MSPbots: AI Product Manager Intern
 *Apr 2026 - Jun 2026 · Remote*
 B2B SaaS for managed service providers · 500+ customers
 
@@ -19,6 +19,12 @@ B2B SaaS for managed service providers · 500+ customers
 - Selected the production voice pipeline (Deepgram + Twilio, **P50 378ms**) via structured load testing across 4 vendor architectures, and modeled unit economics to price it 7x cheaper than the incumbent.
 - Took AI Ticket Intake from prototype to **alpha monetization in about 8 weeks**; grew the pipeline from 3 design partners to 35+ prospects, and built the prospect-to-revenue conversion model (70-80 prospects to 10-13 paying, $2,500 MRR) that leadership adopted for target-setting.
 - Established reliability-first prioritization (321 tickets to 3-4 critical alpha features) and drove GTM to a **47% demo conversion** on the top channel; executed a structured transition (6 handover docs, 32 tasks).
+
+### University of Washington: Full-time Graduate Student
+*Mar 2024 - Apr 2026 · Seattle, WA*
+Dual Master's, Information Systems & Computer Engineering
+
+- Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects (spatiotemporal action spotting, robot trajectory planning, LLM privacy unlearning).
 
 ### DevRev: Product Lead
 *Nov 2022 - Mar 2024 · SF Bay Area / Bangalore*
@@ -44,7 +50,7 @@ POS & supply-chain SaaS · bootstrapped startup
 
 - Architected a REST API marketplace (8+ integrations across payment, delivery, and POS hardware) and a single data model spanning POS, inventory, and payments, cutting merchant implementation time **70%**.
 - Designed a 5-level multi-echelon inventory system with demand forecasting and anomaly detection, cutting pilferage 30% across 100+ locations while holding 99% uptime over 2G networks.
-- Bootstrapped the product **0 to $1M revenue** and 300+ mid-sized and enterprise customers in 18 months, with no external funding.
+- Bootstrapped the product **0 to $1M revenue** and 300+ mid-sized and enterprise customers in 18 months, leading a 15-person team with no external funding.
 - Led 200+ customer discovery interviews; shipped v2.0 cutting churn 14% to 7% and lifting ARPU 30%.
 
 ## Toolkit

@@ -23,7 +23,7 @@ AI builder and platform engineer with 10 years shipping products from 0 to 1 to 
 
 ## Experience
 
-### MSPbots: AI Product Manager / Builder
+### MSPbots: AI Product Manager / Builder Intern
 *Apr 2026 - Jun 2026 · Remote*
 B2B SaaS for managed service providers · 500+ customers
 
@@ -31,6 +31,12 @@ B2B SaaS for managed service providers · 500+ customers
 - Designed a PSA-agnostic intake data model and integration layer (ConnectWise, Autotask, Halo) so one voice pipeline plugged into any MSP's ticketing backend without bespoke integration work; rewrote the skill/prompt harness **637 to 274 lines** with quality up.
 - Authored a 20-metric eval framework (3-tier: offline to shadow to online) and a 7-field ticket-creation failsafe via codebase analysis, **100% ticket reliability** even on sub-3s disconnects; shipped Python pipelines (ClickUp/Fathom/HubSpot via MCP) powering GTM dashboards.
 - Took AI Ticket Intake from prototype to **alpha monetization in about 8 weeks**, growing the pipeline from 3 design partners to 35+ prospects.
+
+### University of Washington: Full-time Graduate Student
+*Mar 2024 - Apr 2026 · Seattle, WA*
+Dual Master's, Computer Engineering & Information Systems
+
+- Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects (spatiotemporal action spotting, robot trajectory planning, LLM privacy unlearning).
 
 ### DevRev: Product Lead
 *Nov 2022 - Mar 2024 · SF Bay Area / Bangalore*
@@ -57,7 +63,7 @@ POS & supply-chain SaaS · bootstrapped startup
 - Designed a single data model spanning POS, 5-level multi-echelon inventory, and payments so restaurants could run billing, stock, and supply chain on one platform instead of stitching together point solutions.
 - Architected a REST API marketplace and webhook layer (8+ integrations across payment terminals, delivery platforms, and POS hardware) with custom hardware SDKs bridging iOS/Android to card terminals and thermal printers, cutting merchant implementation time **70%**.
 - Built an offline-first architecture holding **99% uptime** and sub-13s checkout on 2G networks, leaning on client-side compute so billing stayed robust through outages.
-- Bootstrapped the product **0 to $1M revenue** and 300+ mid-sized and enterprise customers in 18 months, with no external funding; shipped v2.0 cutting churn 14% to 7% and lifting ARPU 30%.
+- Bootstrapped the product **0 to $1M revenue** and 300+ mid-sized and enterprise customers in 18 months, leading a 15-person team with no external funding; shipped v2.0 cutting churn 14% to 7% and lifting ARPU 30%.
 
 ## Selected Projects
 
