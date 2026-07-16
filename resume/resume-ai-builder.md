@@ -36,7 +36,7 @@ B2B SaaS for managed service providers · 500+ customers
 *Mar 2024 - Apr 2026 · Seattle, WA*
 Dual Master's, Computer Engineering & Information Systems
 
-- Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects (spatiotemporal action spotting, robot trajectory planning, LLM privacy unlearning).
+- Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects.
 
 ### DevRev: Product Lead
 *Nov 2022 - Mar 2024 · SF Bay Area / Bangalore*
