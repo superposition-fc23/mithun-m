@@ -55,8 +55,8 @@ POS & supply-chain SaaS · bootstrapped startup
 
 ## Toolkit
 
-- **Voice AI:** Deepgram, Twilio, turn-taking & endpointing, interruption handling, real-time voice pipelines, ASR & TTS evaluation, P50/P95 latency budgeting
-- **ML reliability & evals:** W&B, LLM-as-Judge, three-tier evals (offline/shadow/online), Deepeval, Langfuse, golden datasets & synthetic tests, A/B pipelines & regression gates, drift tracking
+- **Voice AI:** Deepgram, Twilio, turn-taking & endpointing, interruption handling, real-time voice pipelines, ASR & TTS evaluation, P50/P95 latency
+- **ML reliability & evals:** W&B, LLM-as-Judge, three-tier evals (offline/shadow/online), Deepeval, golden datasets & synthetic tests, A/B pipelines & regression gates, drift tracking
 - **Production ML:** Real-time inference pipelines, RAG & multi-agent systems, OpenTelemetry tracing, LoRA fine-tuning
 - **Infrastructure:** Kubernetes, Docker, Grafana, AWS/GCP/Azure, Python, PyTorch
 - **Product:** Product strategy, roadmapping & prioritization, pricing & unit economics, GTM & experimentation, stakeholder & team leadership
