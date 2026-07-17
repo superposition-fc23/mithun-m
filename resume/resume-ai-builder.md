@@ -23,7 +23,7 @@ AI builder and platform engineer with 10 years shipping products from 0 to 1 to 
 
 ## Experience
 
-### MSPbots: AI Product Manager / Builder Intern
+### MSPbots: AI Product Manager / Builder
 *Apr 2026 - Jun 2026 · Remote*
 B2B SaaS for managed service providers · 500+ customers
 
@@ -31,12 +31,6 @@ B2B SaaS for managed service providers · 500+ customers
 - Designed a PSA-agnostic intake data model and integration layer (ConnectWise, Autotask, Halo) so one voice pipeline plugged into any MSP's ticketing backend without bespoke integration work; rewrote the skill/prompt harness **637 to 274 lines** with quality up.
 - Authored a 20-metric eval framework (3-tier: offline to shadow to online) and a 7-field ticket-creation failsafe via codebase analysis, **100% ticket reliability** even on sub-3s disconnects; shipped Python pipelines (ClickUp/Fathom/HubSpot via MCP) powering GTM dashboards.
 - Took AI Ticket Intake from prototype to **alpha monetization in about 8 weeks**, growing the pipeline from 3 design partners to 35+ prospects.
-
-### University of Washington: Full-time Graduate Student
-*Mar 2024 - Apr 2026 · Seattle, WA*
-Dual Master's, Computer Engineering & Information Systems
-
-- Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects.
 
 ### DevRev: Product Lead
 *Nov 2022 - Mar 2024 · SF Bay Area / Bangalore*
@@ -67,14 +61,14 @@ POS & supply-chain SaaS · bootstrapped startup
 
 ## Selected Projects
 
-**Soccer Action Spotting (CV):** *PyTorch · YOLO · ByteTrack · Transformer*
+**[Soccer Action Spotting](https://github.com/superposition-fc23/Soccer_action_spotting) (CV):** *PyTorch · YOLO · ByteTrack · Transformer*
 - CV pipeline on 90-min videos: **0.54 mAP / 66% val accuracy** across 162K frames; custom temporal Transformer beat the LSTM baseline.
 - Novel optimizations cut compute 70% (feature caching, frame filtering) for M1-GPU / resource-constrained deployment.
 
-**Obstacle-Aware Trajectory Planning (Robotics):** *ROS · MoveIt · OMPL RRTConnect*
+**[Obstacle-Aware Trajectory Planning](https://github.com/superposition-fc23/Obstacle-aware-trajectory-planning) (Robotics):** *ROS · MoveIt · OMPL RRTConnect*
 - Collision-free grasping on a Kinova Gen3 Lite arm; 100% sim success and **98% pre-grasp** over 56 physical trials (sim-to-real).
 
-**Machine Unlearning for LLMs (Privacy ML):** *LoRA · Phi-2 · Llama-2*
+**[Machine Unlearning for LLMs](https://github.com/superposition-fc23/machine-unlearning-for-llms) (Privacy ML):** *LoRA · Phi-2 · Llama-2*
 - Gradient-ascent vs gradient-difference unlearning; verbatim memorization to 0 with utility preserved, probed via membership-inference.
 
 ## Education

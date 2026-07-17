@@ -62,6 +62,7 @@
   .edu-meta{ color:var(--muted); font-size:8.6pt; }
   .proj{ margin-bottom:12px; }
   .proj-name{ font-weight:700; color:var(--ink); font-size:9.8pt; }
+  .proj-name a{ color:var(--accent); text-decoration:none; }
   .proj-stack{ color:var(--muted); font-size:8.2pt; font-weight:500; }
 
   .kw{ color:var(--accent); font-weight:600; }
@@ -122,7 +123,7 @@
 
     <div class="job">
       <div class="job-head">
-        <div><span class="job-co">MSPbots</span> · <span class="job-role">AI Product Manager / Builder Intern</span></div>
+        <div><span class="job-co">MSPbots</span> · <span class="job-role">AI Product Manager / Builder</span></div>
         <div class="job-meta">Apr 2026 - Jun 2026 · Remote</div>
       </div>
       <div class="job-sub">B2B SaaS for managed service providers &middot; 500+ customers</div>
@@ -131,17 +132,6 @@
         <li>Designed a PSA-agnostic intake data model and integration layer (ConnectWise, Autotask, Halo) so one voice pipeline plugged into any MSP's ticketing backend without bespoke integration work; rewrote the skill/prompt harness <b>637 to 274 lines</b> with quality up.</li>
         <li>Authored a 20-metric eval framework (3-tier: offline to shadow to online) and a 7-field ticket-creation failsafe via codebase analysis, <b>100% ticket reliability</b> even on sub-3s disconnects; shipped Python pipelines (ClickUp/Fathom/HubSpot via MCP) powering GTM dashboards.</li>
         <li>Took AI Ticket Intake from prototype to <b>alpha monetization in about 8 weeks</b>, growing the pipeline from 3 design partners to 35+ prospects.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-head">
-        <div><span class="job-co">University of Washington</span> · <span class="job-role">Full-time Graduate Student</span></div>
-        <div class="job-meta">Mar 2024 - Apr 2026 · Seattle, WA</div>
-      </div>
-      <div class="job-sub">Dual Master's, Computer Engineering &amp; Information Systems</div>
-      <ul>
-        <li>Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects.</li>
       </ul>
     </div>
 
@@ -193,7 +183,7 @@
       <div>
         <h2>Selected Projects</h2>
         <div class="proj">
-          <div class="proj-name">Soccer Action Spotting (CV)</div>
+          <div class="proj-name"><a href="https://github.com/superposition-fc23/Soccer_action_spotting" target="_blank" rel="noopener">Soccer Action Spotting</a> (CV)</div>
           <div class="proj-stack">PyTorch · YOLO · ByteTrack · Transformer</div>
           <ul>
             <li>CV pipeline on 90-min videos: <b>0.54 mAP / 66% val acc</b>, 162K frames; custom temporal Transformer beat LSTM baseline.</li>
@@ -201,14 +191,14 @@
           </ul>
         </div>
         <div class="proj">
-          <div class="proj-name">Obstacle-Aware Trajectory Planning (Robotics)</div>
+          <div class="proj-name"><a href="https://github.com/superposition-fc23/Obstacle-aware-trajectory-planning" target="_blank" rel="noopener">Obstacle-Aware Trajectory Planning</a> (Robotics)</div>
           <div class="proj-stack">ROS · MoveIt · OMPL RRTConnect</div>
           <ul>
             <li>Collision-free grasping on a Kinova Gen3 Lite arm; 100% sim success and <b>98% pre-grasp</b> over 56 physical trials (sim-to-real).</li>
           </ul>
         </div>
         <div class="proj">
-          <div class="proj-name">Machine Unlearning for LLMs (Privacy ML)</div>
+          <div class="proj-name"><a href="https://github.com/superposition-fc23/machine-unlearning-for-llms" target="_blank" rel="noopener">Machine Unlearning for LLMs</a> (Privacy ML)</div>
           <div class="proj-stack">LoRA · Phi-2 · Llama-2</div>
           <ul>
             <li>Gradient-ascent vs gradient-difference unlearning; verbatim memorization to 0 with utility preserved, probed via membership-inference.</li>

@@ -48,6 +48,7 @@
   .edu-meta{ color:var(--muted); font-size:8.7pt; line-height:1.5; }
   .proj{ font-size:9.3pt; margin-bottom:6px; line-height:1.5; }
   .proj b{ color:var(--ink); font-weight:700; }
+  .proj a{ color:var(--accent); font-weight:700; text-decoration:none; }
   .proj .st{ color:var(--muted); }
 
   @media print{
@@ -90,7 +91,7 @@
 
     <div class="job">
       <div class="job-head">
-        <div><span class="job-co">MSPbots</span> &nbsp;·&nbsp; <span class="job-role">AI Product Manager &amp; Builder Intern</span></div>
+        <div><span class="job-co">MSPbots</span> &nbsp;·&nbsp; <span class="job-role">AI Product Manager &amp; Builder</span></div>
         <div class="job-meta">Apr 2026 - Jun 2026 · Seattle, US</div>
       </div>
       <div class="job-context">B2B SaaS for managed service providers &middot; 500+ customers</div>
@@ -100,17 +101,6 @@
         <li>Built hands-on: prototyped core functionality (rewrote the skill and prompt harness from 637 to 274 lines with quality up, plus a 7-field ticket-creation failsafe) and shipped Python pipelines (ClickUp, Fathom, HubSpot via MCP) powering the GTM dashboards and metrics.</li>
         <li>Instituted an architecture-agnostic evaluation, orchestration, and observability framework: 20 quality metrics with a 5-metric beta gate, turn-taking framed as an F1/AUC-ROC problem, LLM-as-Judge scoring, synthetic scenarios and golden datasets, and per-turn latency tracing.</li>
         <li>Partnered with engineering, data, and customer success to run hypothesis tests on functionality and pricing; assessed and reallocated a 7-person PM team.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-head">
-        <div><span class="job-co">University of Washington</span> &nbsp;·&nbsp; <span class="job-role">Full-time Graduate Student</span></div>
-        <div class="job-meta">Mar 2024 - Apr 2026 · Seattle, WA</div>
-      </div>
-      <div class="job-context">Dual Master's, Computer Engineering &amp; Information Systems</div>
-      <ul>
-        <li>Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects (spatiotemporal action spotting, robot trajectory planning, LLM privacy unlearning).</li>
       </ul>
     </div>
 
@@ -173,9 +163,9 @@
     <div class="grid2">
       <div>
         <h2>Selected Projects</h2>
-        <div class="proj"><b>Soccer Action Spotting</b> <span class="st">(CV)</span>: YOLOv8 + ByteTrack + Transformer temporal encoder; 0.54 mAP across 162K frames, 40% compute saved via feature caching.</div>
-        <div class="proj"><b>Obstacle-Aware Trajectory Planning</b> <span class="st">(Robotics)</span>: collision-free grasping on a Kinova Gen3 Lite arm (ROS/MoveIt/OMPL RRTConnect); 100% sim success and 98% pre-grasp over 56 physical trials.</div>
-        <div class="proj"><b>Machine Unlearning for LLMs</b> <span class="st">(Privacy ML)</span>: gradient-ascent vs gradient-difference unlearning with LoRA on Phi-2/Llama-2; verbatim memorization to 0 with utility preserved.</div>
+        <div class="proj"><a href="https://github.com/superposition-fc23/Soccer_action_spotting" target="_blank" rel="noopener">Soccer Action Spotting</a> <span class="st">(CV)</span>: YOLOv8 + ByteTrack + Transformer temporal encoder; 0.54 mAP across 162K frames, 40% compute saved via feature caching.</div>
+        <div class="proj"><a href="https://github.com/superposition-fc23/Obstacle-aware-trajectory-planning" target="_blank" rel="noopener">Obstacle-Aware Trajectory Planning</a> <span class="st">(Robotics)</span>: collision-free grasping on a Kinova Gen3 Lite arm (ROS/MoveIt/OMPL RRTConnect); 100% sim success and 98% pre-grasp over 56 physical trials.</div>
+        <div class="proj"><a href="https://github.com/superposition-fc23/machine-unlearning-for-llms" target="_blank" rel="noopener">Machine Unlearning for LLMs</a> <span class="st">(Privacy ML)</span>: gradient-ascent vs gradient-difference unlearning with LoRA on Phi-2/Llama-2; verbatim memorization to 0 with utility preserved.</div>
       </div>
       <div>
         <h2>Education</h2>

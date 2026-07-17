@@ -11,7 +11,7 @@ AI Product Manager with 10 years building and scaling products from 0 to 1 to 10
 
 ## Experience
 
-### MSPbots: AI Product Manager Intern
+### MSPbots: AI Product Manager
 *Apr 2026 - Jun 2026 · Remote*
 B2B SaaS for managed service providers · 500+ customers
 
@@ -19,12 +19,6 @@ B2B SaaS for managed service providers · 500+ customers
 - Selected the production voice pipeline (Deepgram + Twilio, **P50 378ms**) via structured load testing across 4 vendor architectures, and modeled unit economics to price it 7x cheaper than the incumbent.
 - Took AI Ticket Intake from prototype to **alpha monetization in about 8 weeks**; grew the pipeline from 3 design partners to 35+ prospects, and built the prospect-to-revenue conversion model (70-80 prospects to 10-13 paying, $2,500 MRR) that leadership adopted for target-setting.
 - Established reliability-first prioritization (321 tickets to 3-4 critical alpha features) and drove GTM to a **47% demo conversion** on the top channel; executed a structured transition (6 handover docs, 32 tasks).
-
-### University of Washington: Full-time Graduate Student
-*Mar 2024 - Apr 2026 · Seattle, WA*
-Dual Master's, Information Systems & Computer Engineering
-
-- Pursued a dual Master's in Computer Engineering and Information Systems, rebuilding technical depth in computer vision, deep learning, and robotics through coursework and three hands-on projects.
 
 ### DevRev: Product Lead
 *Nov 2022 - Mar 2024 · SF Bay Area / Bangalore*
@@ -64,9 +58,9 @@ POS & supply-chain SaaS · bootstrapped startup
 
 ## Selected Projects
 
-- **Soccer Action Spotting (CV):** YOLOv8 + ByteTrack + Transformer temporal encoder; 0.54 mAP across 162K frames, 40% compute saved via feature caching.
-- **Obstacle-Aware Trajectory Planning (Robotics):** collision-free grasping on a Kinova Gen3 Lite arm (ROS/MoveIt/OMPL RRTConnect); 100% sim success and 98% pre-grasp over 56 physical trials.
-- **Machine Unlearning for LLMs (Privacy ML):** gradient-ascent vs gradient-difference unlearning with LoRA on Phi-2/Llama-2; verbatim memorization to 0 with utility preserved.
+- **[Soccer Action Spotting](https://github.com/superposition-fc23/Soccer_action_spotting) (CV):** YOLOv8 + ByteTrack + Transformer temporal encoder; 0.54 mAP across 162K frames, 40% compute saved via feature caching.
+- **[Obstacle-Aware Trajectory Planning](https://github.com/superposition-fc23/Obstacle-aware-trajectory-planning) (Robotics):** collision-free grasping on a Kinova Gen3 Lite arm (ROS/MoveIt/OMPL RRTConnect); 100% sim success and 98% pre-grasp over 56 physical trials.
+- **[Machine Unlearning for LLMs](https://github.com/superposition-fc23/machine-unlearning-for-llms) (Privacy ML):** gradient-ascent vs gradient-difference unlearning with LoRA on Phi-2/Llama-2; verbatim memorization to 0 with utility preserved.
 
 ## Education
 
