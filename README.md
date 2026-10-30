@@ -11,7 +11,6 @@ portfolio-site/
   styles.css        # all styling + responsive + motion
   main.js           # scroll progress, reveal-on-scroll, project tabs, active nav
   assets/img/       # product screenshots
-  resume/           # print-ready resumes, sent per application (not linked from the site)
 ```
 
 All links are **relative**, so the site works whether it is served from
@@ -45,24 +44,6 @@ Nothing left to fill.
 Add a file named `CNAME` containing your domain (e.g. `mithun.dev`) to the repo root,
 then point your DNS (A records or a CNAME) at GitHub Pages per GitHub's docs.
 
-## Résumé
-
-None of the resumes in `resume/` are linked from the site anymore. Two site visitors (e.g. two
-hiring managers who each received a different role-tailored resume) could otherwise land on the
-same portfolio page and spot a link to the other version, which reads as inconsistent. Resumes
-are sent directly per application instead.
-
-The files still live in `resume/` and are each their own source of truth (edit the `.html`
-directly; each has a sibling `.md` kept in sync by hand):
-
-- `resume/resume-ai-product-manager.html` (+ `.md`): AI Product Manager roles, GTM/roadmap-led.
-- `resume/resume-ai-builder.html` (+ `.md`): AI Builder / FDE roles, more technical bullets per
-  company.
-- `resume/resume-mithun-manjunath.html`: a combined, role-agnostic version for ad hoc use.
-
-To produce a PDF from any of them: open it in Chrome, Cmd/Ctrl+P, Save as PDF.
-
-
 ## Editing content
 
 Everything is in `index.html` as one bento grid of cards: an avatar/About card (opens an About
@@ -71,7 +52,7 @@ side-projects group (computer vision, robotics, privacy-preserving ML, then RL-w
 aquaponics), a grouped toolkit, a "Currently" tile, and contact. Each work and research card is a
 `<button data-modal="...">` that opens a modal with `TL;DR` and `Detailed` tabs; the Detailed tab is
 a Problem / Solution / Result / Learnings case study. To swap your photo, replace
-`assets/img/avatar.jpg` (square crop looks best). Categories (`data-cat`) drive the nav filters.
+`assets/img/avatar-head.png` (square crop looks best). Categories (`data-cat`) drive the nav filters.
 
 
 ## Style notes (house rules)
@@ -91,6 +72,6 @@ username, so to publish:
 2. Copy the **contents** of `github-profile/` into its root (so `README.md` and `assets/` sit at the top).
 3. Commit and push to `main`. The profile updates immediately.
 4. On the profile, pin `Soccer_action_spotting`, `Obstacle-aware-trajectory-planning`,
-   `machine-unlearning-for-llms`, and `mithun-m` so the repos back up the README.
+   `machine-unlearning-for-llms`, `freight-exceptions-copilot`, and `mithun-m` so the repos back up the README.
 
 Badges come from shields.io and the typing line from readme-typing-svg; both render on GitHub.
