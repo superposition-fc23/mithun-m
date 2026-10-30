@@ -3,7 +3,7 @@
 <img src="./assets/header.svg" width="100%" alt="Mithun Manjunath, AI Product Manager and Builder. An animated product loop from customer signal to prototype, evals, and production." />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&pause=1200&color=0D9488&center=true&vCenter=true&width=760&lines=AI+Product+Manager+who+writes+the+code;Voice+AI+agents%2C+prototype+to+revenue+in+8+weeks;RAG+copilots+backed+by+evals+and+observability;0+to+1+to+10%2C+across+five+startups" alt="AI Product Manager who writes the code. Voice AI agents, prototype to revenue in 8 weeks. RAG copilots backed by evals and observability. 0 to 1 to 10, across five startups." />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&pause=1200&color=0D9488&center=true&vCenter=true&width=760&lines=AI+Product+Manager+who+writes+the+code;Zero+to+%242.5M+ARR+on+a+new+product+line;Voice+AI%2C+prototype+to+paying+customers+in+8+weeks;Evals+before+features%2C+reliability+before+scale" alt="AI Product Manager who writes the code. Zero to $2.5M ARR on a new product line. Voice AI, prototype to paying customers in 8 weeks. Evals before features, reliability before scale." />
 </a>
 
 [![Portfolio](https://img.shields.io/badge/Explore_my_portfolio-0B1416?style=flat-square&logo=googlechrome&logoColor=5EEAD4)](https://superposition-fc23.github.io/mithun-m/)
@@ -16,28 +16,28 @@
 
 I am an AI product manager with ten years of taking products from 0 to 1 to 10 at seed to Series E startups, including five years bootstrapping my own SaaS company to $1M. I own the whole arc: the customer problem, the data model underneath, the evals that make the product trustworthy, and the pricing and go-to-market that turn it into revenue.
 
-The last three years have been about reliable AI in production: a **RAG copilot that lifted deflection from 40% to 90%** at DevRev, and a **real-time voice AI agent taken from prototype to paying customers in about 8 weeks** at MSPbots. I write the Python myself, and a dual master's at the University of Washington in computer vision, deep learning, and robotics keeps that engineering honest.
+Recent work: a **new product line taken from zero to $2.5M ARR** at DevRev, with an AI copilot as its premium tier, and a **real-time voice AI agent taken from prototype to paying customers in about 8 weeks** at MSPbots. I write the Python myself, and a dual master's at the University of Washington in computer vision, deep learning, and robotics keeps that engineering honest.
 
 | DISCOVER | BUILD | SHIP |
 |:---|:---|:---|
-| 300+ customer interviews, jobs to be done, pricing and unit economics | Voice and RAG pipelines, platform data models, APIs, rapid prototypes in code | Three-tier evals, observability, reliability gates, GTM that converts |
+| 300+ customer interviews, jobs to be done, pricing and unit economics | Voice and RAG pipelines, platform data models, APIs, rapid prototypes in code | Per-phase eval gates, failure analysis, pricing, GTM that converts |
 
 ## Selected impact
 
 | Outcome | What changed |
 |:---|:---|
-| **40% to 90%** support deflection | Led a production RAG copilot (LangChain, MongoDB, hybrid and self-query retrieval) for 50+ enterprise customers at 10K+ queries a day, under 3s |
-| **8 weeks** prototype to alpha revenue | Owned a voice AI ticket-intake agent end to end: picked Deepgram + Twilio over 4 architectures at **P50 378ms**, priced it 7x below the incumbent, grew 3 design partners to 35+ prospects |
-| **100%** ticket reliability | Wrote a 20-metric, three-tier eval framework and a fallback chain so even a sub-3s hang-up still files a ticket; cut the prompt harness from 637 to 274 lines with quality up |
-| **2B+** transactions at 99% reliability | Architected a real-time incentive compute platform (Python, SQL, AWS, Redis) for 5M+ users, with infra cost down 30% |
-| **70%** faster enterprise onboarding | Built a low-code, tree-based formula builder so non-technical users compose their own payout logic |
+| **$0 to $2.5M** ARR, 50 customers | Took DevRev Build from zero as its GM: launched in 4 months on borrowed engineering, then rebuilt it around one rule, never make customers change how they work. The AI copilot became the premium tier |
+| **8 weeks** prototype to paying customers | Led a voice AI agent end to end: picked the pipeline from 5 architectures on tail latency and turn-taking (**P50 378ms**); priced ~7x below the cheapest incumbent; 3 design partners to 35+ prospects |
+| **321 to 3-4** alpha features | One gating question, "will you not pay without this?", with reliability as the one thing alpha had to get right; held launch 3 weeks on flaws the dashboard missed |
+| **3 products, 1 data model** | Led 10 PMs across three countries; Build's sell-alongside-Jira rule forced Support, Build, and Grow onto one system of record, the base of DevRev's platform today |
+| **2B+** transactions at 99% reliability | Real-time incentive platform for 5M+ users; a formula builder let non-technical admins write their own payout logic, cutting implementation time 70% |
 | **0 to $1M**, bootstrapped | Co-founded an offline-first POS that bills on 2G networks; 300+ customers in 18 months, churn cut from 14% to 7% |
 
 ## How I think about AI products
 
-Reliability earns trust, not features. The real MVP of a voice agent was two features done extremely well, not ten done halfway.
+A pipeline does not fail all at once; it leaks one stage at a time. On one voice pipeline the dashboard metric passed at 651ms while the delay callers felt failed at 1,179ms: the headline number left out speech recognition.
 
-Measurement is a prerequisite, not a follow-up. I instrument the pipeline and write the evals before there is traffic to measure, and I treat latency, reliability, and cost as one tradeoff surface. And the bottleneck is almost never the model: it is the data, the retrieval, and the labels around it.
+Every rule you add to a model is bias you chose. Reliability earns trust, not features, and eval infrastructure is the moat, not the MVP: build the measurement before there is traffic.
 
 That is the loop I like running: **customer signal · prototype · evals · production · repeat**.
 
@@ -62,6 +62,7 @@ The engineering is how I stay grounded. These are built by hand, end to end.
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![Deepgram](https://img.shields.io/badge/Deepgram-13EF93?style=flat-square&logoColor=black)
 ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
 ![MCP](https://img.shields.io/badge/MCP-1F3437?style=flat-square)
 
 **Evals and observability**
@@ -70,7 +71,6 @@ The engineering is how I stay grounded. These are built by hand, end to end.
 ![Langfuse](https://img.shields.io/badge/Langfuse-0A0A0A?style=flat-square)
 ![LLM as Judge](https://img.shields.io/badge/LLM--as--Judge-0D9488?style=flat-square)
 ![Weights & Biases](https://img.shields.io/badge/Weights_%26_Biases-FFBE00?style=flat-square&logo=weightsandbiases&logoColor=black)
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 
 **ML, vision, and robotics**

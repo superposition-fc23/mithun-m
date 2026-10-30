@@ -65,7 +65,7 @@
     <rect class="bar" x="148" y="318" width="6" height="40" rx="3" style="animation-delay:.9s"/>
     <rect class="bar" x="162" y="318" width="6" height="40" rx="3" style="animation-delay:1.05s"/>
     <rect class="bar" x="176" y="318" width="6" height="40" rx="3" style="animation-delay:1.2s"/>
-    <text class="mono" x="198" y="344" font-size="14" fill="#5f7a77">P50 378ms · caller to ticket</text>
+    <text class="mono" x="198" y="344" font-size="14" fill="#5f7a77">P50 378ms · first response</text>
   </g>
 
   <!-- Right: the product loop -->
@@ -92,8 +92,8 @@
       <text x="760" y="297" font-size="15" font-weight="700" fill="#eef7f5">Production</text>
       <text class="mono" x="760" y="315" font-size="11" fill="#6f8f8b">observed · priced</text></g>
 
-    <g class="metric m1"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">40% to 90%</text>
-      <text x="930" y="248" font-size="13" fill="#8aa3a0">RAG copilot deflection · DevRev</text></g>
+    <g class="metric m1"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">$0 to $2.5M</text>
+      <text x="930" y="248" font-size="13" fill="#8aa3a0">ARR on a new product line · DevRev</text></g>
     <g class="metric m2"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">8 weeks</text>
       <text x="930" y="248" font-size="13" fill="#8aa3a0">voice AI, prototype to revenue</text></g>
     <g class="metric m3"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">2B+</text>
