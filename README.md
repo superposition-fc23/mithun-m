@@ -79,3 +79,18 @@ a Problem / Solution / Result / Learnings case study. To swap your photo, replac
 Per Mithun's writing preferences: **no em-dashes, no arrow glyphs, no emojis.** Keep copy
 succinct and metric-led. The accent palette and Inter typography are defined as CSS
 variables at the top of `styles.css`.
+
+## GitHub profile README
+
+`github-profile/` holds the profile page shown at `github.com/superposition-fc23`: `README.md`
+plus an animated header at `assets/header.svg` (pure SVG + CSS/SMIL, no external fonts or
+scripts, respects reduced motion). GitHub only renders it from a repo named exactly like the
+username, so to publish:
+
+1. Create a public repo named `superposition-fc23` (GitHub will label it as the special profile repo).
+2. Copy the **contents** of `github-profile/` into its root (so `README.md` and `assets/` sit at the top).
+3. Commit and push to `main`. The profile updates immediately.
+4. On the profile, pin `Soccer_action_spotting`, `Obstacle-aware-trajectory-planning`,
+   `machine-unlearning-for-llms`, and `mithun-m` so the repos back up the README.
+
+Badges come from shields.io and the typing line from readme-typing-svg; both render on GitHub.

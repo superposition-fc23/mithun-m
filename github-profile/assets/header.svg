@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Mithun Manjunath, AI Product Manager and Builder</title>
+  <desc id="d">An animated product loop: customer signal, prototype, evals, production. Metrics from shipped AI products cycle in the center.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1b2a2c" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="52%" r="45%">
+      <stop offset="0" stop-color="#0d9488" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#f5b14c"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="1200" height="420" rx="20"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: Inter, ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .rise { opacity: 0; animation: rise .9s cubic-bezier(.2,.7,.2,1) forwards; }
+    .r1 { animation-delay: .1s; } .r2 { animation-delay: .35s; } .r3 { animation-delay: .6s; } .r4 { animation-delay: .85s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .bar { transform-box: fill-box; transform-origin: center; animation: wave 1.4s ease-in-out infinite; }
+    @keyframes wave { 0%, 100% { transform: scaleY(.35); } 50% { transform: scaleY(1); } }
+    .metric { opacity: 0; animation: cycle 16s infinite; }
+    .m2 { animation-delay: 4s; } .m3 { animation-delay: 8s; } .m4 { animation-delay: 12s; }
+    @keyframes cycle { 0% { opacity: 0; } 3% { opacity: 1; } 22% { opacity: 1; } 25% { opacity: 0; } 100% { opacity: 0; } }
+    .node rect { animation: pulse 8s infinite; }
+    .n2 rect { animation-delay: 2s; } .n3 rect { animation-delay: 4s; } .n4 rect { animation-delay: 6s; }
+    @keyframes pulse { 0%, 100% { stroke: #2a4245; } 6% { stroke: #2dd4bf; } 18% { stroke: #2a4245; } }
+    .flow { stroke-dasharray: 6 10; animation: flow 1.6s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -32; } }
+    @media (prefers-reduced-motion: reduce) {
+      .rise, .bar, .node rect, .flow { animation: none; opacity: 1; }
+      .metric { animation: none; }
+      .m1 { opacity: 1; }
+    }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="420" fill="#0b1416"/>
+    <rect width="1200" height="420" fill="url(#grid)"/>
+    <rect width="1200" height="420" fill="url(#glow)"/>
+    <rect x="0" y="0" width="1200" height="4" fill="url(#edge)"/>
+  </g>
+
+  <!-- Left: identity -->
+  <g class="sans">
+    <text class="mono rise r1" x="64" y="104" font-size="15" fill="#5eead4" letter-spacing="1.5">SUPERPOSITION-FC23 · SEATTLE, WA</text>
+    <text class="rise r2" x="62" y="168" font-size="56" font-weight="800" fill="#eef7f5" letter-spacing="-1.5">Mithun Manjunath</text>
+    <text class="rise r3" x="64" y="212" font-size="25" font-weight="600" fill="#9fe7dc">AI Product Manager &amp; Builder</text>
+    <text class="rise r4" x="64" y="252" font-size="17" fill="#8aa3a0">10 years · 5 startups, seed to Series E · 1 bootstrapped to $1M</text>
+    <text class="rise r4" x="64" y="278" font-size="17" fill="#8aa3a0">Voice AI · RAG copilots · evals · computer vision · robotics</text>
+  </g>
+
+  <!-- Left: voice waveform -->
+  <g class="rise r4" fill="#14b8a6">
+    <rect class="bar" x="64"  y="318" width="6" height="40" rx="3" style="animation-delay:0s"/>
+    <rect class="bar" x="78"  y="318" width="6" height="40" rx="3" style="animation-delay:.15s"/>
+    <rect class="bar" x="92"  y="318" width="6" height="40" rx="3" style="animation-delay:.3s"/>
+    <rect class="bar" x="106" y="318" width="6" height="40" rx="3" style="animation-delay:.45s"/>
+    <rect class="bar" x="120" y="318" width="6" height="40" rx="3" style="animation-delay:.6s"/>
+    <rect class="bar" x="134" y="318" width="6" height="40" rx="3" style="animation-delay:.75s"/>
+    <rect class="bar" x="148" y="318" width="6" height="40" rx="3" style="animation-delay:.9s"/>
+    <rect class="bar" x="162" y="318" width="6" height="40" rx="3" style="animation-delay:1.05s"/>
+    <rect class="bar" x="176" y="318" width="6" height="40" rx="3" style="animation-delay:1.2s"/>
+    <text class="mono" x="198" y="344" font-size="14" fill="#5f7a77">P50 378ms · caller to ticket</text>
+  </g>
+
+  <!-- Right: the product loop -->
+  <path id="loop" d="M760 132 H1100 V300 H760 Z" fill="none" stroke="#1f3437" stroke-width="2"/>
+  <path class="flow" d="M760 132 H1100 V300 H760 Z" fill="none" stroke="#14b8a6" stroke-opacity=".55" stroke-width="2"/>
+
+  <g fill="#f5b14c">
+    <circle r="5" opacity="0"><set attributeName="opacity" to="1" begin="0s"/><animateMotion dur="8s" begin="0s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion></circle>
+    <circle r="5" opacity="0"><set attributeName="opacity" to="1" begin="2.67s"/><animateMotion dur="8s" begin="2.67s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion></circle>
+    <circle r="5" opacity="0"><set attributeName="opacity" to="1" begin="5.33s"/><animateMotion dur="8s" begin="5.33s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion></circle>
+  </g>
+
+  <g class="sans" text-anchor="middle">
+    <g class="node n1"><rect x="674" y="108" width="172" height="48" rx="12" fill="#0f1d1f" stroke="#2a4245" stroke-width="1.5"/>
+      <text x="760" y="129" font-size="15" font-weight="700" fill="#eef7f5">Customer signal</text>
+      <text class="mono" x="760" y="147" font-size="11" fill="#6f8f8b">300+ interviews</text></g>
+    <g class="node n2"><rect x="1014" y="108" width="172" height="48" rx="12" fill="#0f1d1f" stroke="#2a4245" stroke-width="1.5"/>
+      <text x="1100" y="129" font-size="15" font-weight="700" fill="#eef7f5">Prototype</text>
+      <text class="mono" x="1100" y="147" font-size="11" fill="#6f8f8b">Python · in weeks</text></g>
+    <g class="node n3"><rect x="1014" y="276" width="172" height="48" rx="12" fill="#0f1d1f" stroke="#2a4245" stroke-width="1.5"/>
+      <text x="1100" y="297" font-size="15" font-weight="700" fill="#eef7f5">Evals</text>
+      <text class="mono" x="1100" y="315" font-size="11" fill="#6f8f8b">offline · shadow · live</text></g>
+    <g class="node n4"><rect x="674" y="276" width="172" height="48" rx="12" fill="#0f1d1f" stroke="#2a4245" stroke-width="1.5"/>
+      <text x="760" y="297" font-size="15" font-weight="700" fill="#eef7f5">Production</text>
+      <text class="mono" x="760" y="315" font-size="11" fill="#6f8f8b">observed · priced</text></g>
+
+    <g class="metric m1"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">40% to 90%</text>
+      <text x="930" y="248" font-size="13" fill="#8aa3a0">RAG copilot deflection · DevRev</text></g>
+    <g class="metric m2"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">8 weeks</text>
+      <text x="930" y="248" font-size="13" fill="#8aa3a0">voice AI, prototype to revenue</text></g>
+    <g class="metric m3"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">2B+</text>
+      <text x="930" y="248" font-size="13" fill="#8aa3a0">transactions at 99% reliability</text></g>
+    <g class="metric m4"><text x="930" y="222" font-size="38" font-weight="800" fill="#5eead4">0 to $1M</text>
+      <text x="930" y="248" font-size="13" fill="#8aa3a0">bootstrapped, no outside funding</text></g>
+  </g>
+
+  <text class="mono" x="1136" y="392" font-size="12" fill="#3f5b58" text-anchor="end">build · measure · earn trust · repeat</text>
+</svg>
