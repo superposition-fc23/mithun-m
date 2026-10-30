@@ -102,16 +102,6 @@ The engineering is how I stay grounded. These are built by hand, end to end.
 ![Leadership](https://img.shields.io/badge/Team_leadership-0B1416?style=flat-square)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
-## Path so far
-
-| | Company | Role | In one line |
-|:---|:---|:---|:---|
-| 2026 | **MSPbots** | AI Product Manager & Builder | Voice AI agent that answers the phone and files the ticket |
-| 2022 to 2024 | **DevRev** | Product Lead | RAG copilot to production in 4 months; led 10 PMs across the US, Slovenia, and India |
-| 2020 to 2022 | **Xoxoday** | VP, Product & Engineering | Real-time platform on 2B+ data points; built and led a 35-person org |
-| | **Oto.com** (CarDekho) | Associate VP, Product | New marketplace vertical, 0 to $1M in 8 months |
-| 2015 to 2019 | **Shoptree** | Co-founder, Product & Technology | Offline-first POS, bootstrapped to $1M and 300+ customers |
-
 ## Foundations
 
 - **Dual Master's, Computer Engineering & Information Systems**, University of Washington (GPA 3.81)
