@@ -9,7 +9,6 @@
 [![Portfolio](https://img.shields.io/badge/Explore_my_portfolio-0B1416?style=flat-square&logo=googlechrome&logoColor=5EEAD4)](https://superposition-fc23.github.io/mithun-m/)
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0D9488?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mithunmanjunath)
 [![Email](https://img.shields.io/badge/mithun2389%40gmail.com-1F3437?style=flat-square&logo=gmail&logoColor=white)](mailto:mithun2389@gmail.com)
-![Seattle](https://img.shields.io/badge/Seattle%2C_WA-5F7A77?style=flat-square&logo=googlemaps&logoColor=white)
 
 </div>
 

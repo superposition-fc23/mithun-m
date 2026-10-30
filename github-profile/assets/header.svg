@@ -47,7 +47,7 @@
 
   <!-- Left: identity -->
   <g class="sans">
-    <text class="mono rise r1" x="64" y="104" font-size="15" fill="#5eead4" letter-spacing="1.5">SUPERPOSITION-FC23 · SEATTLE, WA</text>
+    <text class="mono rise r1" x="64" y="104" font-size="15" fill="#5eead4" letter-spacing="1.5">SUPERPOSITION-FC23</text>
     <text class="rise r2" x="62" y="168" font-size="56" font-weight="800" fill="#eef7f5" letter-spacing="-1.5">Mithun Manjunath</text>
     <text class="rise r3" x="64" y="212" font-size="25" font-weight="600" fill="#9fe7dc">AI Product Manager &amp; Builder</text>
     <text class="rise r4" x="64" y="252" font-size="17" fill="#8aa3a0">10 years · 5 startups, seed to Series E · 1 bootstrapped to $1M</text>
